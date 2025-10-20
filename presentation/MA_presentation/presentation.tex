@@ -1,0 +1,70 @@
+% Default \lang to ngerman
+\ifx\lang\undefined
+	\newcommand{\lang}{ngerman}
+\fi
+
+% Set \handout dependant on \handoutmode
+\ifx\handoutmode\undefined
+	\newcommand{\handout}{}
+\else
+	\newcommand{\handout}{handout}
+\fi
+
+% Make additional colors available
+\PassOptionsToPackage{x11names}{xcolor}
+
+% Load the beamer class, set the presentation data and use the LSS layout
+\documentclass[\lang,\handout]{beamer}
+\author[\presentershort]{\presenter}
+\title[\shortpresentationtitle]{\presentationtitle}
+\ifx \presentationtype \undefinded
+\else
+	\subtitle{\presentationtype}
+\fi
+\date{\presentationdate}
+\institute{Institute of Signal Processing and\\ System Theory\\\vspace{1em}University of Stuttgart}
+\usetheme[alternativetitlepage=true,% Use the fancy title page.
+          titlepagelogo=isslogocolor,% Logo for the first page.
+          watermark=isslogocolor,% Watermark used in every page.
+          watermarkheight=25px,% Height of the watermark.
+          ]{LSS}
+
+% Grays uncovered objects instead of making them invisible; comment to make uncovered objects invisible
+\setbeamercovered{transparent}
+
+% Set work to presentation to not get blue hyperlinks
+\newcommand{\work}{presentation}
+
+% Input general definitions and loading of packages which can be shared with the thesis.
+% Comment this line if you want to decide yourself which packages should be loaded.
+\input{general}
+
+% Use serifs in math environment and no serifs in text environment
+\usefonttheme[onlymath]{serif}
+
+% Define two practical lengths, which can be uses when setting the size of graphics
+\newlength\fullwidth
+\setlength\fullwidth{11cm}
+\newlength\fullheight
+\setlength\fullheight{6.8cm}
+
+% Set lines a bit thicker in presentations when using pgfplots to allow recognition of colored lines
+\ifx\pgfplotsset\undefined
+	%
+\else
+	\pgfplotsset{every axis/.append style={thick}}
+\fi
+
+% Put four slides on each page if handout mode activated
+\ifx\handoutmode\undefined
+	%
+\else
+	\usepackage{pgfpages}
+	\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+	% use this line instead, if you have problems with rotated eps files
+	% \pgfpagesuselayout{4 on 1}[border shrink=5mm,landscape]
+\fi
+
+
+% Define Layout parameters:
+\setlength{\itemsep}{0.5em}

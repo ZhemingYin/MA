@@ -1,0 +1,95 @@
+# Macros
+# ==============================================================================
+# frame_length = 4
+sampling_rate = 2
+# batch_size = 32
+ckpt_max_to_keep = 1
+num_samples = 512
+num_chirps = 32
+whether_fftshift = True
+
+
+# Paths in remote server
+# ==============================================================================
+sd_dataset.base_dir = '/data/public/rd_sr/dataset_sample/'
+sd_dataset.tfrecord_folder = '/no_backups/d1513//tfrecord/'   # the folder to save tfrecord files
+main.checkpoint_path = '/no_backups/d1513/checkpoints/'    # the folder to save checkpoints
+Evaluation.checkpoint_restore_path = '/no_backups/d1513/checkpoints/ckpt_CNN_simple/train_2024_10_31_11_3_38/'    # the folder to restore the checkpoint
+
+
+# # Paths in local computer
+# # ==============================================================================
+# sd_dataset.base_dir = '/Users/yinzheming/Downloads/MA/dataset_sample/'
+# sd_dataset.tfrecord_folder = '/Users/yinzheming/Downloads/MA/tfrecord/'   # the folder to save tfrecord files
+# main.checkpoint_path = '/Users/yinzheming/Downloads/MA/checkpoints/'    # the folder to save checkpoints
+# Evaluation.checkpoint_restore_path = '/Users/yinzheming/Downloads/MA/checkpoints/ckpt_CNN_simple/train_2024_11_6_16_5_36/'    # the folder to restore the checkpoint
+
+
+# General settings for main file
+# ==============================================================================
+# main.create_tfrecords = False    # bool, whether to create tfrecords, if True, the tfrecords files will be created
+main.type = 'Tune'    # the type of the process, options: 'Train', 'Test', 'Tune'
+main.model_name = 'CNN_simple'    # the name of the model to be trained
+
+
+# Loading dataset
+# ==============================================================================
+sd_dataset.train_types = ['corridor&slow_tempo', 'corridor&medium_tempo']      # Format {env}&{tempo}, options for envs: 'corridor'; options for tempos: 'slow_tempo', 'medium_tempo'
+sd_dataset.test_types = ['corridor&medium_tempo']      # Format {env}&{tempo}, options for envs: 'corridor'; options for tempos: 'slow_tempo', 'medium_tempo'
+# sd_dataset.train_types = ['static', 'movingPerson', 'movingRadar']      # the types of the dataset only for train dataset
+# sd_dataset.test_types = ['movingPerson', 'movingRadar']      # the types of the dataset only for test dataset
+sd_dataset.shift_window = %frame_length    # shift window for augmenting the dynamic dataset
+sd_dataset.frame_length = %frame_length     # the number of frames as input, including the current frame and the past frames
+sd_dataset.sampling_rate = %sampling_rate    # the sampling rate of the range_doppler map
+sd_dataset.train_test_ratio = 0.8    # the ratio of the train dataset if both train and test need the same type of dataset
+sd_dataset.random_state = 42    # the random seed for splitting the dataset
+sd_dataset.static_remove_duplicates = True    # whether to remove the duplicated or similar data for static type
+sd_dataset.low_res_processing_type = 'voltage'   # the unit of the low resolution data, options: 'voltage', 'power', 'dBW' and 'dBm'
+sd_dataset.high_res_processing_type = 'voltage'   # the unit of the high resolution data, options: 'voltage', 'power', 'dBW' and 'dBm'
+
+
+# Prepare the dataset
+# ==============================================================================
+prepare.buffer_size = 50    # the buffer size for shuffling the dataset
+prepare.shuffle_seed = 42   # the random seed for shuffling the dataset
+prepare.batch_size = %batch_size    # the batch size for training
+
+
+# Data processing
+# ==============================================================================
+processing.R = 50    # the resistance of the radar
+processing.data_size_info = [%frame_length, %sampling_rate, %num_samples, %num_chirps]
+plot_range_doppler.R = 50    # the resistance of the radar
+
+
+# Train
+# ==============================================================================
+# Trainer.epochs = 5    # the number of epochs for training
+# Trainer.learning_rate = 0.001    # the learning rate for training
+Trainer.ckpt_max_to_keep = %ckpt_max_to_keep    # the maximum number of checkpoints to keep
+# Trainer.optimizer_type = 'Adam'   # the type of optimizer for training
+
+loss_function.data_type = 'time_domain'   # the type of the data, options: 'time_domain', 'frequency_domain'
+
+convert_to_time_domain.whether_fftshift = %whether_fftshift
+
+
+# Evaluation
+# ==============================================================================
+Evaluation.ckpt_max_to_keep = %ckpt_max_to_keep   # the maximum number of checkpoints to keep
+
+# Calculate the resolution
+resolution_calculation.start_frequency_GHz = 59   # the start frequency of the radar, unit in GHz
+resolution_calculation.end_frequency_GHz = 63   # the stop frequency of the radar, unit in GHz
+resolution_calculation.chirp_repetition_time_s=0.000220  # the chirp repetition time of the radar, unit in s
+
+
+# Model
+# ==============================================================================
+CNN_simple.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]
+# CNN_simple.num_layers = 4
+# CNN_simple.neuron_list = [16, 32, 16, 2]
+# CNN_simple.upsampling_layer_idx = 2
+CNN_simple.kernel_size = %sampling_rate
+CNN_simple.stride = 1
+CNN_simple.sampling_rate = %sampling_rate

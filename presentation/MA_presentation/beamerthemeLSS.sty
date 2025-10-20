@@ -1,0 +1,30 @@
+% Copyright 2007 by Marco Barisione
+% Copyright 2010 by Patrick Häcker
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+
+\mode<presentation>
+
+\DeclareOptionBeamer{alternativetitlepage}[true]{\PassOptionsToPackage{alternativetitlepage=#1}{beamerinnerthemeLSS}}
+\DeclareOptionBeamer{titlepagelogo}{\PassOptionsToPackage{titlepagelogo=#1}{beamerinnerthemeLSS}}
+\DeclareOptionBeamer{bullet}{\PassOptionsToPackage{bullet=#1}{beamerinnerthemeLSS}}
+\DeclareOptionBeamer{pageofpages}{\PassOptionsToPackage{pageofpages=#1}{beamerouterthemeLSS}}
+\DeclareOptionBeamer{titleline}[true]{\PassOptionsToPackage{titleline=#1}{beamerouterthemeLSS}}
+\DeclareOptionBeamer{watermark}{\PassOptionsToPackage{watermark=#1}{beamerouterthemeLSS}}
+\DeclareOptionBeamer{watermarkheight}{\PassOptionsToPackage{watermarkheight=#1}{beamerouterthemeLSS}}
+\DeclareOptionBeamer{watermarkheightmult}{\PassOptionsToPackage{watermarkheightmult=#1}{beamerouterthemeLSS}}
+
+\ProcessOptionsBeamer
+
+\useinnertheme{LSS}
+\useoutertheme{LSS}
+\usecolortheme{LSS}
+
+\setbeamertemplate{navigation symbols}{\insertsectionnavigationsymbol\insertslidenavigationsymbol\insertframenavigationsymbol}
+
+
+\mode
+<all>

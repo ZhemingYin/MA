@@ -1,0 +1,224 @@
+# Macros
+# ==============================================================================
+frame_length = 4    # the number of frames as input
+sampling_rate = 2   # the upsampling ratio, such as 2, 4, 8
+batch_size = 8   # the batch size for training
+ckpt_max_to_keep = 5    # the maximum number of checkpoints to remain
+num_samples = 512   # the number of samples within each chirp for the high-resolution range_Doppler map
+num_chirps = 64  # the number of chirps for the high-resolution range_Doppler map
+whether_fftshift = True   # whether to shift the range-Doppler map for the zero-centered velocity axis
+processing_method = 'padding&shuffle&ap/ph&with_log10&abs_normalization(0,1)&no_angle_normalization'     # The type of pre- or post-processing, format {processing type: padding or conv or no_processing}&{upsampling type: shuffle or transposed}&{separation type: re/im or ap/ph or ap}&{with_log10 or no_log}&{abs normalization type:abs_normalization(0,1) or abs_normalization(-1,1) or no_abs_normalization}&{angle normalization type: angle_normalization or no_angle_normalization}
+vgg_layer_names = ['block1_conv2', 'block2_conv2', 'block3_conv4', 'block4_conv4']  # the layer names of the VGG for the perceptual loss
+
+
+# Paths in remote server
+# ==============================================================================
+sd_dataset.base_dir = '/data/public/rd_sr/dataset_2/'   # the base directory of the dataset
+sd_dataset.tfrecord_folder = '/no_backups/d1513/tfrecord/'   # the folder to save tfrecord files
+main.checkpoint_path = '/no_backups/d1513/checkpoints/'    # the folder to save checkpoints
+Evaluation.checkpoint_restore_path = '/no_backups/d1513/checkpoints/ckpt_CNN_simple/train_2024_10_31_11_3_38/'    # the folder to restore the checkpoint
+Evaluation.benchmark_checkpoint_path = '/no_backups/d1513/checkpoints/ckpt_CNN_simple/train_2024_10_31_11_3_38/'    # the folder to restore the benchmark checkpoint
+
+
+# # Paths in local computer
+# # ==============================================================================
+# sd_dataset.base_dir = '/Users/yinzheming/Downloads/MA/dataset/dataset_2/'
+# sd_dataset.tfrecord_folder = '/Users/yinzheming/Downloads/MA/tfrecord/'   # the folder to save tfrecord files
+# main.checkpoint_path = '/Users/yinzheming/Downloads/MA/checkpoints/'    # the folder to save checkpoints
+# Evaluation.checkpoint_restore_folder = '/Users/yinzheming/Downloads/MA/evaluation/evaluation_loss_combination/'    # the folder to restore the checkpoint
+# Evaluation.benchmark_checkpoint_path = '/Users/yinzheming/Downloads/MA/evaluation/evaluation_models/SwinIR+Swin/'    # if benchmark model name is interpolation, here doesn't matter
+
+
+# General settings for main file2
+# ==============================================================================
+main.create_tfrecords = False    # bool, whether to create tfrecords, if True, the tfrecords files will be created
+main.type = 'Train'    # the type of the process, options: 'Train', 'Test', 'Tune'
+main.model_name = 'DP-Transformer'    # the name of the model to be trained, options: 'UNet_concat', 'DP-Transformer', 'SwinIR+DP', 'SwinIR+Swin', 'cGAN', 'CNN_simple', 'UNet_simple', 'Interpolation'
+main.benchmark_model_name = 'Interpolation'   # the name of the benchmark model, options as above
+main.tfrecord_suffix = '_factor2'    # remember to change the corresponding parameters above! the suffix of the tfrecord files, such as '_factor2', '_factor4' or something else.
+
+
+# Train
+# ==============================================================================
+Trainer.epochs = 200    # the number of epochs for training
+Trainer.learning_rate = 1e-5    # the learning rate for training
+Trainer.ckpt_max_to_keep = %ckpt_max_to_keep    # the maximum number of checkpoints to keep
+Trainer.optimizer_type = 'Adam'   # the type of optimizer for training
+Trainer.early_stop_patience = 10     # After the value of patience epochs, if no better validation loss, the training will be terminated
+Trainer.loss_type = 'lsd&frequency_domain'   # Format {loss_function_type}&{data_type}, options for the first {}: 'lsd', 'perceptual', 'mse', 'weighted_mse', 'sdr', 'plsd'; options for the second {}: 'time_domain' or 'frequency_domain'
+Trainer.early_stop_type = True  # whether to use early stop
+Trainer.lr_schedule_type = True    # whether to use learning rate schedule
+Trainer.overfitting_type = False    # whether to use overfitting training without validation
+Trainer.pretraining = False   # whether to use pretraining by LSD
+Trainer.layer_names = %vgg_layer_names  # the layer names of the VGG for the perceptual loss
+Trainer.lambda_lsd = 1.0    # the weight of the loss in loss combination
+Trainer.lambda_vgg = 0.0    # the weight of the perceptual loss in loss combination
+Trainer.lambda_disc = 0.0   # the weight of the adversarial loss in loss combination, but now unavailable
+Trainer.processing_method = %processing_method # the processing methods applied
+Trainer.sampling_rate = %sampling_rate   # the upsampling ratio
+
+
+# Loading dataset
+# ==============================================================================
+sd_dataset.train_types = ['corridor&slow_tempo', 'corridor&medium_tempo']      # Format {env}&{tempo}, options for envs: 'corridor'; options for tempos: 'slow_tempo', 'medium_tempo'
+sd_dataset.test_types = ['corridor&medium_tempo']      # Format {env}&{tempo}, options for envs: 'corridor'; options for tempos: 'slow_tempo', 'medium_tempo'
+# sd_dataset.train_types = ['static', 'movingRadar']      # the types of the dataset only for train dataset
+# sd_dataset.test_types = ['static', 'movingRadar']      # the types of the dataset only for test dataset
+sd_dataset.shift_window = %frame_length    # the step of the shift window in loading frames for the augmentation of the dataset
+sd_dataset.frame_length = %frame_length     # the number of frames as input
+sd_dataset.sampling_rate = %sampling_rate    # the sampling rate of the range_Doppler map
+sd_dataset.train_test_ratio = 0.8    # the ratio of the train dataset if both train and test need the same type of dataset
+sd_dataset.random_state = 42    # the random seed for splitting the dataset
+sd_dataset.static_remove_duplicates = True    # whether to remove the duplicated or similar data for static type, unavailable now
+sd_dataset.low_res_processing_type = 'voltage'   # the unit of the low resolution data, options: 'voltage', 'power', 'dBW' and 'dBm'
+sd_dataset.high_res_processing_type = 'voltage'   # the unit of the high resolution data, options: 'voltage', 'power', 'dBW' and 'dBm'
+sd_dataset.is_high_pass_filter = False    # whether to use high pass filter for the data
+
+
+# Prepare the dataset
+# ==============================================================================
+prepare.buffer_size = 50    # the buffer size for shuffling the dataset
+prepare.shuffle_seed = 42   # the random seed for shuffling the dataset
+prepare.batch_size = %batch_size    # the batch size for training
+
+
+# Data processing
+# ==============================================================================
+processing.R = 50    # the resistance of the radar
+processing.data_size_info = [%frame_length, %sampling_rate, %num_samples, %num_chirps]  # some information of the loaded data
+plot_range_doppler.R = 50    # the resistance of the radar
+rD_processing.whether_fftshift = %whether_fftshift    # whether to use fftshift for the range_doppler map
+resampling_processing.resampling_factor = %sampling_rate    # the upsampling ratio
+resampling_processing.num_chirps = %num_chirps  # the number of chirps
+resampling_processing.num_samples = %num_samples    # the number of samples within each chirp
+
+
+# Loss function
+# ==============================================================================
+lsd.scaling_factor = 1  # the scale factor of the threshold in the LSD mask
+lsd.thres_type = 'batch_median' # The type of the threshold in LSD mask
+lsd.processing_method = %processing_method  # the processing methods applied
+
+generator_loss.LAMBDA_l1_loss = 1.0 # The weights of the LSD loss in the generator adversarial loss function
+generator_loss.LAMBDA_perceptual_loss = 0.5    # The weights of the perceptual loss in the generator adversarial loss function
+generator_loss.LAMBDA_gan_loss = 1e-2   # The weights of the adversarial loss in the generator adversarial loss function
+
+convert_to_time_domain.whether_fftshift = %whether_fftshift   # whether to use fftshift for the range_doppler map
+
+# Evaluation
+# ==============================================================================
+Evaluation.ckpt_max_to_keep = %ckpt_max_to_keep   # the maximum number of checkpoints to keep
+Evaluation.whether_fftshift = %whether_fftshift    # whether to use fftshift for the range_doppler map
+Evaluation.processing_method = %processing_method   # the processing methods applied
+Evaluation.layer_names = %vgg_layer_names   # the layer names of the VGG for the perceptual loss
+
+# Calculate the resolution
+resolution_calculation.start_frequency_GHz = 59   # the start frequency of the radar, unit in GHz
+resolution_calculation.end_frequency_GHz = 63   # the stop frequency of the radar, unit in GHz
+resolution_calculation.chirp_repetition_time_s=0.000220  # the chirp repetition time of the radar, unit in s
+resolution_calculation.num_chirps = %num_chirps # the number of chirps
+
+
+# Model
+
+# cGAN
+# ==============================================================================
+
+ConditionalGAN.generator_name = 'DP-Transformer'    # the name of the chosen model as the generator
+ConditionalGAN.discriminator_name = 'discriminator'   # the name of the chosen model as the discriminator
+ConditionalGAN.discriminator_scale = 'small'    # the scale of the discriminator, options: 'small' or 'large'
+ConditionalGAN.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]    # the input size of the generator
+
+# CNN_simple
+# ==============================================================================
+CNN_simple.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]    # the input size of the CNN model
+CNN_simple.neuron_list = [16, 32, 64, 128, 128, 64, 32, 16] # the neurons in each convolutional layer of the CNN model
+CNN_simple.upsampling_layer_idx = 3 # the index of the convolutional layer after which the upsampling layer is applied in the CNN model
+CNN_simple.processing_method = %processing_method   # the processing methods applied
+CNN_simple.kernel_size = 2  # the kernel size of the convolutional layer in the CNN model
+CNN_simple.stride = 1   # the stride of the convolutional layers in CNN model
+CNN_simple.sampling_rate = %sampling_rate   # the upsampling ratio
+
+# UNet_simple
+# ==============================================================================
+UNet_simple.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]   # the input size of the UNet model
+UNet_simple.kernel_size = 5 # the kernel size of the convolutional layer in the UNet model
+UNet_simple.downsample_neuron_list = [16]   # the neurons of the convolutional layers in encoder of the UNet model, the number of the Conv. in encoder is up to the length of the list
+UNet_simple.upsample_neuron_list = [32, 16] # the neurons in the upsampling convolutional layers of the UNet model, the number of the Conv. in decoder is up to the length of the list
+UNet_simple.processing_method = %processing_method  # the processing methods applied
+UNet_simple.stride = 2  # the stride of the convolutional layers in the UNet model
+
+# UNet_concat
+# ==============================================================================
+UNet_concat.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]   # the input size of the UNet concat model
+UNet_concat.kernel_size = 4 # the kernel size of the convolutional layer in the UNet concat model
+UNet_concat.stride = 2  # the stride of the convolutional layers in the UNet concat model
+UNet_concat.processing_method = %processing_method  # the processing methods applied
+UNet_concat.large_model = False # whether to use the large model of UNet concat
+
+# Interpolation_upsampling
+# ==============================================================================
+interpolation_upsampling.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]  # the input size of the interpolation model
+interpolation_upsampling.processing_method = %processing_method # the processing methods applied
+
+# DP-Transformer
+# =================================================================
+DPTransformerSTFT.num_dp_layers = 1   # the number of DP blocks in the DP-TF Transformer model
+DPTransformerSTFT.num_layers = 1    # the number of TE blocks in the DP-TF Transformer model
+DPTransformerSTFT.d_model = 64  # same as the dff parameter
+DPTransformerSTFT.dff = 64  # the number of neurons in the convolutional layers
+DPTransformerSTFT.num_heads = 2 # the number of heads in the multi-head attention
+DPTransformerSTFT.enc_kernel_size = 3   # the kernel size of the convolutional layer in the encoder
+DPTransformerSTFT.dec_kernel_size = 1   # the kernel size of the convolutional layer in the decoder
+DPTransformerSTFT.enc_filters = 64  # same as the dff parameter
+DPTransformerSTFT.dec_filters = 64  # same as the dff parameter
+DPTransformerSTFT.sep_filters = 64  # same as the dff parameter
+DPTransformerSTFT.maximum_position_encoding = 10000 # the maximum position encoding in the DP-TF Transformer model
+DPTransformerSTFT.re_im_split = 0   # unavaiable now
+DPTransformerSTFT.strides = 1   # the stride of the convolutional layers in the encoder of the DP-TF Transformer model
+DPTransformerSTFT.upsampling_ratio = %sampling_rate # the upsampling ratio
+DPTransformerSTFT.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps] # the input size of the DP-TF Transformer model
+DPTransformerSTFT.processing_method = %processing_method    # the processing methods applied
+
+# SwinIR
+# =================================================================
+SwinIR.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]    # the input size of the SwinIR model
+SwinIR.dp_depths = [1]  # the number of RSTB blocks in the SwinIR+DP model
+SwinIR.dp_num_layer = 1 # the number of STL blocks in the SwinIR+DP model
+SwinIR.embed_dim_df = 64
+SwinIR.swin_depths = [1,1]  # the number of RSTB blocks in the SwinIR+Swin model
+SwinIR.swin_num_layer = 2   # the number of STL blocks in the SwinIR+Swin model
+SwinIR.embed_dim_swin = 64
+SwinIR.patch_size = (2,2)   # the patch size of 2D range-Doppler patch in SwinIR+Swin model
+SwinIR.window_size = [5,4]  # the window size between 2D range-Doppler patch in SwinIR+Swin model
+SwinIR.kernel_size = 3  # the kernel size of the convolutional layer in the SwinIR model
+SwinIR.num_mlp = 256    # the number of neurons in the MLP layer, up to the dff parameter and the patch size, the relationship is num_mlp = dff * patch_size[0] * patch_size[1]
+SwinIR.qkv_bias = True
+SwinIR.dropout_rate = 0.03
+SwinIR.num_heads = 2    # the number of heads in the multi-head attention
+SwinIR.d_model = 64
+SwinIR.dff = 64 # the number of neurons in the convolutional layers
+SwinIR.maximum_position_encoding = 10000
+SwinIR.re_im_split = 0
+SwinIR.upsampling_ratio = %sampling_rate    # the upsampling ratio
+SwinIR.processing_method = %processing_method   # the processing methods applied
+
+# DP-Transformer_test
+# =================================================================
+DPTransformerSTFT_test.num_dp_layers = 1
+DPTransformerSTFT_test.num_layers = 1
+DPTransformerSTFT_test.d_model = 64
+DPTransformerSTFT_test.dff = 64
+DPTransformerSTFT_test.num_heads = 2
+DPTransformerSTFT_test.enc_kernel_size = 3
+DPTransformerSTFT_test.dec_kernel_size = 1
+DPTransformerSTFT_test.enc_filters = 64
+DPTransformerSTFT_test.dec_filters = 64
+DPTransformerSTFT_test.sep_filters = 64
+DPTransformerSTFT_test.maximum_position_encoding = 10000
+DPTransformerSTFT_test.re_im_split = 0
+DPTransformerSTFT_test.strides = 1
+DPTransformerSTFT_test.upsampling_ratio = %sampling_rate
+DPTransformerSTFT_test.input_size_info = [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]
+DPTransformerSTFT_test.processing_method = %processing_method
+DPTransformerSTFT_test.conditions = [False, False, False, False, False, False, False, False, False, False, False, False]

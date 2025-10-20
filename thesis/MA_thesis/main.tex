@@ -1,0 +1,424 @@
+% -----------------------------------------------------------------
+% Vorlage fuer Ausarbeitungen von
+% Bachelor- und Masterarbeiten am ISS
+% 
+% Template for written reports or master theses at the ISS
+% 
+% For use with compilers pdflatex or latex->dvi2ps->ps2pdf.
+%
+% -----------------------------------------------------------------
+% README, STUDENT USERS:
+% We highly appreciate students using this template _AS IS_,period. 
+% The document provides adjustable document preferences, 
+% student information settings and typography definitions. Look for
+% code delimited by *** ***
+%
+% The short explanation: it's the ISS common standard and 
+% 	it's battle tested.
+% The long explanation: 
+%	We do not want you to go through the document and tweak the 
+%	package options, layout parameters and line skips here and 
+%	there and waste hours. We are providing this template such 
+%	that you can fully concentrate on filling in the much more 
+%	important _contents_ of your thesis.
+%
+% If you have serious needs on extra packages or design 
+% modifications, talk to your supervisor _before_ modifying 
+% the template.
+% Similarly, we're happy if you give your supervisor a hint on any 
+% errors in this template.
+%
+% -----------------------------------------------------------------
+% History:
+% Jan Scheuing,   04.03.2002
+% Markus Buehren, 20.12.2004
+% last changes:   10.01.2008 (removed unused packages), 
+% 		07.08.2009 (added IEEEtran_LSS.bst file)
+% 		02.05.2011 removed matriculation number from cover page
+% Martin Kreissig, 25.01.2012: all eps/ps parts removed for 
+% 				pdflatex to work properly
+% Peter Hermannstaedter, 14.08.2012: fusion of versions for 
+% 		latex/dvi/ps/pdf and pdflatex, additional comments,
+% 		unification of document flags and student options
+% Florian Liebgott, 12.03.2015: bug fixes, removal of obsolete options,
+%		switch to UTF-8
+% Florian Liebgott, 20.05.2015: fixed encoding problem on title page
+% Florian Liebgott, 24.01.2017: changed deprecated font commands (like
+%		\sl) to up-to-date commands to be compatible with
+%		current TeX distributions.
+% Felix Wiewel, 30.08.2021: Replace obsolete scrpage2 with scrlayer-scrpage
+%
+% -----------------------------------------------------------------
+% If you experience any errors caused by this template, please
+% contact Florian Liebgott (florian.liebgott@iss.uni-stuttgart.de)
+% or your supervisor, so we can fix the errors.
+% -----------------------------------------------------------------
+
+
+\documentclass[12pt,DIV14,BCOR12mm,a4paper,footinclude=false,headinclude,parskip=half-,twoside,openright,cleardoublepage=empty,toc=index,bibliography=totoc,listof=totoc]{scrreprt}
+% encoding needs to be defined here, otherwise umlauts on the titelpage won't work.
+\usepackage[utf8]{inputenc}
+\usepackage{acronym}
+\usepackage{setspace}
+\usepackage{textgreek}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% \usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usepackage{amsmath, amssymb, mathrsfs}
+\usepackage[abbreviations,symbols,style=index]{glossaries-extra}
+\usepackage[acronym]{glossaries}
+\usepackage{abstract}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{refs.bib}%
+\usepackage{multirow}
+\usepackage{cleveref}
+\usepackage{dirtree}
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{siunitx}
+%
+%
+% *****************************************************************
+% -------------------> document preferences here <-----------------
+% *****************************************************************
+% Uncomment the settings you like and comment the settings you don't
+% like.
+
+% Language: 
+% affects generic titles, Figure term, titlepage and bibliography
+% (Note:if you switch the language, compile tex and bib >2 times)
+\def \doclang{english} 	% For theses/reports in English
+%\def \doclang{german} 		% For theses/reports in German
+
+% Hyperref links in the document:
+\def \colortype{color} % links with colored text
+%\def \colortype{bw} 	% plain links, standard text color (e.g. for print)
+%\def \colortype{boxed} % links with colored boxes
+% *****************************************************************
+%
+%
+%
+% *****************************************************************
+% --------------> put student information here <------------------
+% *****************************************************************
+% Please fill in all items denoted by "to be defined (TBD)"
+\def \deworktitle{Upsampling der Range-Doppler-Karte für einkanaliges Chirp-Sequence-Radar unter Verwendung von Deep Learning}        % German title/translation
+\def \enworktitle{Range-Doppler map upsampling for single channel chirp sequence radar using Deep Learning}        % English title/translation
+\def \tutor{Sven Hinderer}
+\def \student{Zheming Yin}
+\def \worksubject{Masterarbeit D1513}  % type and number (S/Dxxxx) of your thesis
+\def \startdate{01.10.2024}
+\def \submission{31.03.2025}
+\def \signagedate{31.03.2025}   % Date of signature of declaration on last page
+\def \keywords{Range-Doppler map, Image upsampling, Transformer, cGAN, Data collection, Data processing, Loss combination}
+%\def \abstract{Abstract TBD}
+
+% *****************************************************************
+%
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{ifthen}
+\ifthenelse{\equal{\doclang}{german}}{
+	\usepackage[ngerman]{babel} %german version
+	\def \maintitle{\deworktitle}
+	\def \translatedtitle{\enworktitle}
+	% set , to decimal and . to thousands separator, if German language is used
+	\DeclareMathSymbol{,}{\mathord}{letters}{"3B}
+	\DeclareMathSymbol{.}{\mathpunct}{letters}{"3A}
+	}{
+	%english version
+	\def \maintitle{\enworktitle}
+	\def \translatedtitle{\deworktitle}
+	}
+\usepackage{txfonts} % Times-Fonts
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage[headsepline]{scrlayer-scrpage} % Headings
+
+\usepackage{graphicx}
+\usepackage[format=hang]{caption}       % for hanging captions
+\usepackage{subfig}                     % for subfigures
+\usepackage{wrapfig}                    % for figures floating in text, alternatively you can use >>floatflt<<
+\usepackage{booktabs}                   % nice looking tables (for tables with ONLY horizontal lines)
+
+%%%%% Tikz / PGF - drawing beautiful graphics and plots in Latex
+% \usepackage{tikz}
+% \usetikzlibrary{plotmarks}              % larger choice of plot marks
+% \usetikzlibrary{arrows}                 % larger choice of arrow heads
+% % ... insert other libraries you need
+% \usepackage{pgfplots}
+% % set , to decimal and . to thousands separator for plots, if German language is used
+% \ifthenelse{\equal{\doclang}{german}}{
+% \pgfkeys{/pgf/number format/set decimal separator={,}}
+% \pgfkeys{/pgf/number format/set thousands separator={.}}
+% }{}
+%%%%%%
+
+\ifthenelse{\equal{\colortype}{color}}{
+	% colored text version:
+	\usepackage[colorlinks,linkcolor=blue]{hyperref}
+	\newcommand{\bugfix}{\color{white}{\texttt{\symbol{'004}}}} % Bug-Fix Umlaute in Verbatim
+}{
+	\ifthenelse{\equal{\colortype}{boxed}}{
+		% colored box version:
+		\usepackage{hyperref}
+		\newcommand{\bugfix}{\color{white}{\texttt{\symbol{'004}}}} % Bug-Fix Umlaute in Verbatim
+	}{
+		% monochrome version:
+		\usepackage[hidelinks]{hyperref}
+		\newcommand{\bugfix}{\color{white}{\texttt{\symbol{'004}}}} % Bug-Fix Umlaute in Verbatim
+	}
+}
+
+% Layout and Headings
+\pagestyle{scrheadings}
+\automark{chapter}
+\clearscrheadfoot
+\lehead[]{\pagemark~~\headmark}
+\rohead[]{\headmark~~\pagemark}
+\renewcommand{\chaptermark}[1]{\markboth {\normalfont\slshape \hspace{8mm}#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\normalfont\slshape \thesection~#1\hspace{8mm}}}
+\addtolength{\textheight}{15mm}
+\parindent0ex
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+\renewcommand*{\pnumfont}{\normalfont\slshape} % Seitenzahl geneigt
+\renewcommand*{\sectfont}{\bfseries} % Kapitelueberschrift nicht Helvetica
+
+% Settings for PDF document
+\pdfstringdef \studentPDF {\student} 
+\pdfstringdef \worktitlePDF {\maintitle}
+\pdfstringdef \worksubjectPDF {\worksubject}
+\hypersetup{pdfauthor=\studentPDF, 
+            pdftitle=\worktitlePDF,
+            pdfsubject=\worksubjectPDF}
+
+% Title page
+\titlehead{
+	\includegraphics[width=20mm]{university-logo}
+	\hspace{6mm}
+	\ifthenelse{\equal{\doclang}{german}}{
+		\begin{minipage}[b]{.6\textwidth}
+		{\Large Universit\"at Stuttgart } \\
+		Institut f\"ur Signalverarbeitung und Systemtheorie\\
+		Professor Dr.-Ing. B. Yang \vspace{0pt}
+		\end{minipage}
+	}{
+		\begin{minipage}[b]{.6\textwidth}
+		{\Large University of Stuttgart } \\
+		Institute for Signal Processing and System Theory\\
+		Professor Dr.-Ing. B. Yang \vspace{0pt}
+		\end{minipage}
+	}
+	\hspace{1mm}
+	\includegraphics[width=28mm]{isslogocolor}
+}
+\subject{\worksubject\vspace*{-5mm}} % Art und Nummer der Arbeit
+\title{\maintitle}%\\ \Large{\subtitle}}
+\subtitle{\translatedtitle}
+\author{
+\large
+  \ifthenelse{\equal{\doclang}{german}}{
+  \begin{tabular}{rp{7cm}}
+    \Large 
+    Autor:      & \Large \student \vspace*{2mm}\\
+    Ausgabe:    & \startdate \\
+    Abgabe:     & \submission \vspace*{3mm}\\
+    Betreuer:   & \tutor \vspace*{2mm}\\
+    Stichworte: & \keywords
+  \end{tabular}
+  }{
+  \begin{tabular}{rp{7cm}}
+    \Large 
+    Author:             & \Large \student \vspace*{2mm}\\
+    Date of work begin: & \startdate \\
+    Date of submission: & \submission \vspace*{3mm}\\
+    Supervisor:         & \tutor \vspace*{2mm}\\
+    Keywords:           & \keywords
+  \end{tabular}
+  }
+  \bugfix
+}
+\date{}
+\publishers{\normalsize
+  \begin{minipage}[t]{.9\textwidth}
+    \abstract
+  \end{minipage}
+}
+
+\numberwithin{equation}{chapter} 
+\sloppy 
+
+%
+%
+%
+% *****************************************************************
+% --------------> put typography definitions here <----------------
+% *****************************************************************
+% colors
+\definecolor{darkblue}{rgb}{0,0,0.4}
+
+% declarations
+\newcommand{\matlab}{\textsc{Matlab}\raisebox{1ex}{\tiny{\textregistered}} }
+% Integers, natural, real and complex numbers
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+% expectation operator
+\newcommand{\E}{\operatorname{E}}
+% imaginary unit
+\newcommand{\im}{\operatorname{j}}
+% Euler's number with exponent as parameter, e.g. \e{\im\omega}
+\newcommand{\e}[1]{\operatorname{e}^{\,#1}}
+% short command for \operatorname{}
+\newcommand{\op}[1]{\operatorname{#1}}
+
+% unknown hyphenation rules
+\hyphenation{Im-puls-ant-wort Im-puls-ant-wort-ko-ef-fi-zien-ten
+Pro-gramm-aus-schnitt Mi-kro-fon-sig-nal}
+% *****************************************************************
+%
+
+\input{content/glossary.tex}
+
+\begin{document}
+
+% title and table of contents
+\pagenumbering{alph}
+\maketitle
+ \cleardoublepage
+\pagenumbering{roman} % roman numbering for table of contents
+\tableofcontents
+ \cleardoublepage
+
+
+% Input the abbreviation
+\renewcommand{\glossarypreamble}{\glsfindwidesttoplevelname[\currentglossary]}
+\setglossarystyle{alttree}
+\printunsrtglossary[type=abbreviations]
+\cleardoublepage
+\noindent
+
+% Input the abstract
+\input{content/abstract.tex}
+
+\cleardoublepage
+
+\setcounter{page}{1}
+\pagenumbering{arabic} % arabic numbering for rest of document
+
+% *****************************************************************
+% -------------------> start writing here <------------------------
+
+%\chapter{Introduction}
+%\section{Explanations}
+%As shown in \cite{C2}, we present an equation
+%\begin{align}
+%	H(\omega) = \int h(t) \e{\im\omega t} \delta t \in \N
+%\end{align}
+%
+%Then we include a graphic in figure \ref{mind} and information about captions in table \ref{captions}.\\
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=.3]{isslogocolor}
+%	\caption{A beautiful mind}
+%	\label{mind}
+%\end{figure}
+%
+%\begin{table}
+%    \centering
+%    \caption{Where to put the caption}
+%    \label{captions}
+%    \begin{tabular}{lcc}
+%        \toprule
+%         & above & below\\
+%        \midrule
+%        for figures & no & yes\\
+%        for tables & yes & no\\
+%        \bottomrule
+%    \end{tabular}
+%\end{table}
+%
+%
+%Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+%\newpage
+%Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\input{thesis/content/introduction.tex}
+
+\input{thesis/content/dataset.tex}
+
+\input{thesis/content/models}
+
+\input{thesis/content/loss}
+
+\input{thesis/content/optimization}
+
+\input{content/results.tex}
+
+\input{thesis/content/summary&outlook}
+
+\input{thesis/content/appendix}
+
+
+
+% -------------------> end writing here <------------------------
+% *****************************************************************
+\listoffigures
+\listoftables
+
+\ifthenelse{\equal{\doclang}{german}}{
+	\bibliographystyle{IEEEtran_ISSger}
+}{
+	\bibliographystyle{IEEEtran_ISS}
+}
+
+\printbibliography{}
+%\bibliography{refs}
+
+% *****************************************************************
+%% Additional page with Declaration ("Eidesstattliche Erklrung");
+%% completed automatically
+\begin{titlepage}
+      \vfill
+      \LARGE \ifthenelse{\equal{\doclang}{german}}{\textbf{Erkl\"arung}}{\textbf{Declaration}}
+      \vfill
+
+      \ifthenelse{\equal{\doclang}{german}}{
+         Hiermit erkl\"are ich, dass ich diese Arbeit selbstst\"andig verfasst und keine anderen als die angegebenen
+         Quellen und Hilfsmittel benutzt habe.
+      }
+      {
+         Herewith, I declare that I have developed and written the enclosed thesis entirely by myself and that I have not used sources or means except those declared.
+      }
+
+      \vspace{1cm}
+
+      \ifthenelse{\equal{\doclang}{german}}{
+         Die Arbeit wurde bisher keiner anderen Pr\"ufungsbeh\"orde vorgelegt und auch noch nicht ver\"offentlicht.
+      }
+      {
+         This thesis has not been submitted to any other authority to achieve an academic grading and has not been published elsewhere.
+      }
+
+      \vfill
+
+      
+      Stuttgart, \signagedate
+      \hfill
+      \begin{tabular}{l}
+          \hline
+          \student
+      \end{tabular}
+\end{titlepage}
+
+
+
+\end{document}

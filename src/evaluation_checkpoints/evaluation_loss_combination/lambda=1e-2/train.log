@@ -1,0 +1,631 @@
+2025-03-17 20:17:40,974 - ------------------------Loading TFRecord files------------------------
+2025-03-17 20:17:41,141 - Preparing the datasets now...
+2025-03-17 20:20:55,481 - Train set is prepared
+2025-03-17 20:21:47,205 - Validation set is prepared
+2025-03-17 20:22:08,371 - Test set is prepared
+2025-03-17 20:22:08,372 - ------------------------Finish preparing the datasets------------------------
+2025-03-17 20:22:08,500 - The model dp_transformer_stft is loaded successfully
+2025-03-17 20:22:08,536 - ------------------------Start the training process------------------------
+2025-03-17 20:22:10,274 - Start of epoch 1
+2025-03-17 20:22:26,023 - None
+2025-03-17 20:22:34,852 - Saved checkpoint path for step 101 in epoch 1: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-2
+2025-03-17 20:22:34,854 - epoch 1, Train Loss: 0.5739185214042664, Validation Loss: 0.12558388710021973, Time taken: 24.578814268112183, The best epoch 1 has the minimum validation loss 0.12558388710021973
+2025-03-17 20:22:37,034 - Start of epoch 2
+2025-03-17 20:22:51,113 - Saved checkpoint path for step 201 in epoch 2: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-3
+2025-03-17 20:22:51,115 - epoch 2, Train Loss: 0.25483813881874084, Validation Loss: 0.11956099420785904, Time taken: 14.080475091934204, The best epoch 2 has the minimum validation loss 0.11956099420785904
+2025-03-17 20:22:52,623 - Start of epoch 3
+2025-03-17 20:23:06,084 - Saved checkpoint path for step 301 in epoch 3: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-4
+2025-03-17 20:23:06,085 - epoch 3, Train Loss: 0.2462228238582611, Validation Loss: 0.11708460003137589, Time taken: 13.461848735809326, The best epoch 3 has the minimum validation loss 0.11708460003137589
+2025-03-17 20:23:08,256 - Start of epoch 4
+2025-03-17 20:23:21,812 - Saved checkpoint path for step 401 in epoch 4: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-5
+2025-03-17 20:23:21,813 - epoch 4, Train Loss: 0.24101951718330383, Validation Loss: 0.11520542949438095, Time taken: 13.556147336959839, The best epoch 4 has the minimum validation loss 0.11520542949438095
+2025-03-17 20:23:23,531 - Start of epoch 5
+2025-03-17 20:23:38,444 - Saved checkpoint path for step 501 in epoch 5: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-6
+2025-03-17 20:23:38,446 - epoch 5, Train Loss: 0.23966723680496216, Validation Loss: 0.11459517478942871, Time taken: 14.914772510528564, The best epoch 5 has the minimum validation loss 0.11459517478942871
+2025-03-17 20:23:40,135 - Start of epoch 6
+2025-03-17 20:23:53,877 - Saved checkpoint path for step 601 in epoch 6: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-7
+2025-03-17 20:23:53,879 - epoch 6, Train Loss: 0.23835094273090363, Validation Loss: 0.11440692842006683, Time taken: 13.743857383728027, The best epoch 6 has the minimum validation loss 0.11440692842006683
+2025-03-17 20:23:55,575 - Start of epoch 7
+2025-03-17 20:24:09,761 - Saved checkpoint path for step 701 in epoch 7: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-8
+2025-03-17 20:24:09,763 - epoch 7, Train Loss: 0.23746319115161896, Validation Loss: 0.11426552385091782, Time taken: 14.186996936798096, The best epoch 7 has the minimum validation loss 0.11426552385091782
+2025-03-17 20:24:11,343 - Start of epoch 8
+2025-03-17 20:24:24,593 - Saved checkpoint path for step 801 in epoch 8: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-9
+2025-03-17 20:24:24,595 - epoch 8, Train Loss: 0.23663610219955444, Validation Loss: 0.11397318542003632, Time taken: 13.251197814941406, The best epoch 8 has the minimum validation loss 0.11397318542003632
+2025-03-17 20:24:26,133 - Start of epoch 9
+2025-03-17 20:24:41,243 - Saved checkpoint path for step 901 in epoch 9: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-10
+2025-03-17 20:24:41,245 - epoch 9, Train Loss: 0.23612524569034576, Validation Loss: 0.11368440091609955, Time taken: 15.111217737197876, The best epoch 9 has the minimum validation loss 0.11368440091609955
+2025-03-17 20:24:42,839 - Start of epoch 10
+2025-03-17 20:24:56,119 - Saved checkpoint path for step 1001 in epoch 10: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-11
+2025-03-17 20:24:56,121 - epoch 10, Train Loss: 0.2360212355852127, Validation Loss: 0.11337669938802719, Time taken: 13.281386613845825, The best epoch 10 has the minimum validation loss 0.11337669938802719
+2025-03-17 20:24:57,711 - Start of epoch 11
+2025-03-17 20:25:12,349 - epoch 11, Train Loss: 0.23608480393886566, Validation Loss: 0.11371202766895294, Time taken: 14.636934518814087, The best epoch 10 has the minimum validation loss 0.11337669938802719
+2025-03-17 20:25:14,064 - Start of epoch 12
+2025-03-17 20:25:27,278 - Saved checkpoint path for step 1201 in epoch 12: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-12
+2025-03-17 20:25:27,279 - epoch 12, Train Loss: 0.23482006788253784, Validation Loss: 0.11313547194004059, Time taken: 13.214782238006592, The best epoch 12 has the minimum validation loss 0.11313547194004059
+2025-03-17 20:25:29,035 - Start of epoch 13
+2025-03-17 20:25:42,689 - Saved checkpoint path for step 1301 in epoch 13: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-13
+2025-03-17 20:25:42,691 - epoch 13, Train Loss: 0.23543515801429749, Validation Loss: 0.11267149448394775, Time taken: 13.655155658721924, The best epoch 13 has the minimum validation loss 0.11267149448394775
+2025-03-17 20:25:44,467 - Start of epoch 14
+2025-03-17 20:25:59,584 - Saved checkpoint path for step 1401 in epoch 14: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-14
+2025-03-17 20:25:59,586 - epoch 14, Train Loss: 0.233933225274086, Validation Loss: 0.11246422678232193, Time taken: 15.118161678314209, The best epoch 14 has the minimum validation loss 0.11246422678232193
+2025-03-17 20:26:01,110 - Start of epoch 15
+2025-03-17 20:26:14,533 - Saved checkpoint path for step 1501 in epoch 15: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-15
+2025-03-17 20:26:14,535 - epoch 15, Train Loss: 0.2332577258348465, Validation Loss: 0.11242637783288956, Time taken: 13.423293590545654, The best epoch 15 has the minimum validation loss 0.11242637783288956
+2025-03-17 20:26:16,194 - Start of epoch 16
+2025-03-17 20:26:30,236 - Saved checkpoint path for step 1601 in epoch 16: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-16
+2025-03-17 20:26:30,237 - epoch 16, Train Loss: 0.2325553297996521, Validation Loss: 0.11171793937683105, Time taken: 14.042318105697632, The best epoch 16 has the minimum validation loss 0.11171793937683105
+2025-03-17 20:26:31,935 - Start of epoch 17
+2025-03-17 20:26:45,760 - Saved checkpoint path for step 1701 in epoch 17: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-17
+2025-03-17 20:26:45,762 - epoch 17, Train Loss: 0.23127399384975433, Validation Loss: 0.11137837171554565, Time taken: 13.826091289520264, The best epoch 17 has the minimum validation loss 0.11137837171554565
+2025-03-17 20:26:47,622 - Start of epoch 18
+2025-03-17 20:27:02,645 - Saved checkpoint path for step 1801 in epoch 18: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-18
+2025-03-17 20:27:02,647 - epoch 18, Train Loss: 0.23036283254623413, Validation Loss: 0.11086448282003403, Time taken: 15.024174451828003, The best epoch 18 has the minimum validation loss 0.11086448282003403
+2025-03-17 20:27:04,447 - Start of epoch 19
+2025-03-17 20:27:18,774 - Saved checkpoint path for step 1901 in epoch 19: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-19
+2025-03-17 20:27:18,776 - epoch 19, Train Loss: 0.22885286808013916, Validation Loss: 0.11060402542352676, Time taken: 14.32872462272644, The best epoch 19 has the minimum validation loss 0.11060402542352676
+2025-03-17 20:27:20,381 - Start of epoch 20
+2025-03-17 20:27:34,642 - Saved checkpoint path for step 2001 in epoch 20: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-20
+2025-03-17 20:27:34,644 - epoch 20, Train Loss: 0.22824439406394958, Validation Loss: 0.11019127070903778, Time taken: 14.26270842552185, The best epoch 20 has the minimum validation loss 0.11019127070903778
+2025-03-17 20:27:36,166 - Start of epoch 21
+2025-03-17 20:27:50,581 - Saved checkpoint path for step 2101 in epoch 21: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-21
+2025-03-17 20:27:50,583 - epoch 21, Train Loss: 0.22744308412075043, Validation Loss: 0.10998387634754181, Time taken: 14.416887521743774, The best epoch 21 has the minimum validation loss 0.10998387634754181
+2025-03-17 20:27:52,242 - Start of epoch 22
+2025-03-17 20:28:07,850 - epoch 22, Train Loss: 0.2268204241991043, Validation Loss: 0.1099892258644104, Time taken: 15.606987953186035, The best epoch 21 has the minimum validation loss 0.10998387634754181
+2025-03-17 20:28:09,530 - Start of epoch 23
+2025-03-17 20:28:23,598 - Saved checkpoint path for step 2301 in epoch 23: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-22
+2025-03-17 20:28:23,600 - epoch 23, Train Loss: 0.226221963763237, Validation Loss: 0.10938669741153717, Time taken: 14.069483518600464, The best epoch 23 has the minimum validation loss 0.10938669741153717
+2025-03-17 20:28:25,314 - Start of epoch 24
+2025-03-17 20:28:39,638 - Saved checkpoint path for step 2401 in epoch 24: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-23
+2025-03-17 20:28:39,641 - epoch 24, Train Loss: 0.22549834847450256, Validation Loss: 0.10916943848133087, Time taken: 14.325891256332397, The best epoch 24 has the minimum validation loss 0.10916943848133087
+2025-03-17 20:28:41,267 - Start of epoch 25
+2025-03-17 20:28:55,834 - Saved checkpoint path for step 2501 in epoch 25: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-24
+2025-03-17 20:28:55,836 - epoch 25, Train Loss: 0.22493968904018402, Validation Loss: 0.10880514234304428, Time taken: 14.567787885665894, The best epoch 25 has the minimum validation loss 0.10880514234304428
+2025-03-17 20:28:57,458 - Start of epoch 26
+2025-03-17 20:29:11,838 - Saved checkpoint path for step 2601 in epoch 26: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-25
+2025-03-17 20:29:11,840 - epoch 26, Train Loss: 0.2239249050617218, Validation Loss: 0.10835053771734238, Time taken: 14.381002187728882, The best epoch 26 has the minimum validation loss 0.10835053771734238
+2025-03-17 20:29:13,607 - Start of epoch 27
+2025-03-17 20:29:29,512 - Saved checkpoint path for step 2701 in epoch 27: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-26
+2025-03-17 20:29:29,514 - epoch 27, Train Loss: 0.22347693145275116, Validation Loss: 0.10826176404953003, Time taken: 15.906367301940918, The best epoch 27 has the minimum validation loss 0.10826176404953003
+2025-03-17 20:29:31,484 - Start of epoch 28
+2025-03-17 20:29:45,724 - Saved checkpoint path for step 2801 in epoch 28: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-27
+2025-03-17 20:29:45,727 - epoch 28, Train Loss: 0.22334839403629303, Validation Loss: 0.10825415700674057, Time taken: 14.242128133773804, The best epoch 28 has the minimum validation loss 0.10825415700674057
+2025-03-17 20:29:47,268 - Start of epoch 29
+2025-03-17 20:30:01,503 - Saved checkpoint path for step 2901 in epoch 29: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-28
+2025-03-17 20:30:01,505 - epoch 29, Train Loss: 0.2230786681175232, Validation Loss: 0.10790707916021347, Time taken: 14.2365243434906, The best epoch 29 has the minimum validation loss 0.10790707916021347
+2025-03-17 20:30:03,220 - Start of epoch 30
+2025-03-17 20:30:17,456 - Saved checkpoint path for step 3001 in epoch 30: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-29
+2025-03-17 20:30:17,458 - epoch 30, Train Loss: 0.22258833050727844, Validation Loss: 0.10777018219232559, Time taken: 14.237192153930664, The best epoch 30 has the minimum validation loss 0.10777018219232559
+2025-03-17 20:30:19,051 - Start of epoch 31
+2025-03-17 20:30:32,730 - Saved checkpoint path for step 3101 in epoch 31: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-30
+2025-03-17 20:30:32,732 - epoch 31, Train Loss: 0.22234567999839783, Validation Loss: 0.10773346573114395, Time taken: 13.680739164352417, The best epoch 31 has the minimum validation loss 0.10773346573114395
+2025-03-17 20:30:34,333 - Start of epoch 32
+2025-03-17 20:30:47,705 - epoch 32, Train Loss: 0.22219574451446533, Validation Loss: 0.10794482380151749, Time taken: 13.370336771011353, The best epoch 31 has the minimum validation loss 0.10773346573114395
+2025-03-17 20:30:49,403 - Start of epoch 33
+2025-03-17 20:31:03,832 - Saved checkpoint path for step 3301 in epoch 33: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-31
+2025-03-17 20:31:03,834 - epoch 33, Train Loss: 0.2218925505876541, Validation Loss: 0.10769619047641754, Time taken: 14.430206775665283, The best epoch 33 has the minimum validation loss 0.10769619047641754
+2025-03-17 20:31:05,450 - Start of epoch 34
+2025-03-17 20:31:23,070 - Saved checkpoint path for step 3401 in epoch 34: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-32
+2025-03-17 20:31:23,072 - epoch 34, Train Loss: 0.22158366441726685, Validation Loss: 0.10728146880865097, Time taken: 17.621506452560425, The best epoch 34 has the minimum validation loss 0.10728146880865097
+2025-03-17 20:31:24,684 - Start of epoch 35
+2025-03-17 20:31:38,814 - Saved checkpoint path for step 3501 in epoch 35: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-33
+2025-03-17 20:31:38,815 - epoch 35, Train Loss: 0.22152069211006165, Validation Loss: 0.10726728290319443, Time taken: 14.130668878555298, The best epoch 35 has the minimum validation loss 0.10726728290319443
+2025-03-17 20:31:40,651 - Start of epoch 36
+2025-03-17 20:31:55,135 - Saved checkpoint path for step 3601 in epoch 36: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-34
+2025-03-17 20:31:55,137 - epoch 36, Train Loss: 0.22151704132556915, Validation Loss: 0.10720667988061905, Time taken: 14.485160112380981, The best epoch 36 has the minimum validation loss 0.10720667988061905
+2025-03-17 20:31:56,913 - Start of epoch 37
+2025-03-17 20:32:11,370 - Saved checkpoint path for step 3701 in epoch 37: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-35
+2025-03-17 20:32:11,372 - epoch 37, Train Loss: 0.2214134782552719, Validation Loss: 0.10719003528356552, Time taken: 14.457956314086914, The best epoch 37 has the minimum validation loss 0.10719003528356552
+2025-03-17 20:32:12,921 - Start of epoch 38
+2025-03-17 20:32:27,330 - Saved checkpoint path for step 3801 in epoch 38: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-36
+2025-03-17 20:32:27,332 - epoch 38, Train Loss: 0.22127613425254822, Validation Loss: 0.10711423307657242, Time taken: 14.409737348556519, The best epoch 38 has the minimum validation loss 0.10711423307657242
+2025-03-17 20:32:28,918 - Start of epoch 39
+2025-03-17 20:32:41,921 - epoch 39, Train Loss: 0.22117963433265686, Validation Loss: 0.10716156661510468, Time taken: 13.001881122589111, The best epoch 38 has the minimum validation loss 0.10711423307657242
+2025-03-17 20:32:43,458 - Start of epoch 40
+2025-03-17 20:32:56,862 - epoch 40, Train Loss: 0.22105446457862854, Validation Loss: 0.10714119672775269, Time taken: 13.403062582015991, The best epoch 38 has the minimum validation loss 0.10711423307657242
+2025-03-17 20:32:58,711 - Start of epoch 41
+2025-03-17 20:33:16,759 - Saved checkpoint path for step 4101 in epoch 41: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-37
+2025-03-17 20:33:16,761 - epoch 41, Train Loss: 0.22094053030014038, Validation Loss: 0.10692032426595688, Time taken: 18.049320459365845, The best epoch 41 has the minimum validation loss 0.10692032426595688
+2025-03-17 20:33:18,374 - Start of epoch 42
+2025-03-17 20:33:32,196 - epoch 42, Train Loss: 0.2206771820783615, Validation Loss: 0.10696689039468765, Time taken: 13.821053266525269, The best epoch 41 has the minimum validation loss 0.10692032426595688
+2025-03-17 20:33:33,899 - Start of epoch 43
+2025-03-17 20:33:47,295 - Saved checkpoint path for step 4301 in epoch 43: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-38
+2025-03-17 20:33:47,296 - epoch 43, Train Loss: 0.220558762550354, Validation Loss: 0.1069091185927391, Time taken: 13.396457195281982, The best epoch 43 has the minimum validation loss 0.1069091185927391
+2025-03-17 20:33:48,969 - Start of epoch 44
+2025-03-17 20:34:02,100 - epoch 44, Train Loss: 0.22062647342681885, Validation Loss: 0.10692795366048813, Time taken: 13.129799604415894, The best epoch 43 has the minimum validation loss 0.1069091185927391
+2025-03-17 20:34:03,632 - Start of epoch 45
+2025-03-17 20:34:17,088 - epoch 45, Train Loss: 0.22051465511322021, Validation Loss: 0.10697201639413834, Time taken: 13.455095291137695, The best epoch 43 has the minimum validation loss 0.1069091185927391
+2025-03-17 20:34:18,677 - Start of epoch 46
+2025-03-17 20:34:31,569 - epoch 46, Train Loss: 0.22034652531147003, Validation Loss: 0.10694266855716705, Time taken: 12.890721082687378, The best epoch 43 has the minimum validation loss 0.1069091185927391
+2025-03-17 20:34:33,274 - Start of epoch 47
+2025-03-17 20:34:47,308 - Saved checkpoint path for step 4701 in epoch 47: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-39
+2025-03-17 20:34:47,310 - epoch 47, Train Loss: 0.22038649022579193, Validation Loss: 0.10676507651805878, Time taken: 14.034936904907227, The best epoch 47 has the minimum validation loss 0.10676507651805878
+2025-03-17 20:34:48,976 - Start of epoch 48
+2025-03-17 20:35:02,903 - Saved checkpoint path for step 4801 in epoch 48: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-40
+2025-03-17 20:35:02,905 - epoch 48, Train Loss: 0.22009727358818054, Validation Loss: 0.10675211995840073, Time taken: 13.927867889404297, The best epoch 48 has the minimum validation loss 0.10675211995840073
+2025-03-17 20:35:04,412 - Start of epoch 49
+2025-03-17 20:35:18,039 - Saved checkpoint path for step 4901 in epoch 49: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-41
+2025-03-17 20:35:18,041 - epoch 49, Train Loss: 0.2201816439628601, Validation Loss: 0.10664594173431396, Time taken: 13.628636121749878, The best epoch 49 has the minimum validation loss 0.10664594173431396
+2025-03-17 20:35:19,719 - Start of epoch 50
+2025-03-17 20:35:33,847 - Saved checkpoint path for step 5001 in epoch 50: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-42
+2025-03-17 20:35:33,849 - epoch 50, Train Loss: 0.22025007009506226, Validation Loss: 0.10659503936767578, Time taken: 14.12908935546875, The best epoch 50 has the minimum validation loss 0.10659503936767578
+2025-03-17 20:35:35,414 - Start of epoch 51
+2025-03-17 20:35:53,752 - epoch 51, Train Loss: 0.2199018895626068, Validation Loss: 0.10668865591287613, Time taken: 18.336726903915405, The best epoch 50 has the minimum validation loss 0.10659503936767578
+2025-03-17 20:35:55,359 - Start of epoch 52
+2025-03-17 20:36:09,318 - Saved checkpoint path for step 5201 in epoch 52: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-43
+2025-03-17 20:36:09,320 - epoch 52, Train Loss: 0.21994461119174957, Validation Loss: 0.10657467693090439, Time taken: 13.960478782653809, The best epoch 52 has the minimum validation loss 0.10657467693090439
+2025-03-17 20:36:10,860 - Start of epoch 53
+2025-03-17 20:36:25,080 - Saved checkpoint path for step 5301 in epoch 53: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-44
+2025-03-17 20:36:25,082 - epoch 53, Train Loss: 0.21977443993091583, Validation Loss: 0.10644689947366714, Time taken: 14.221970081329346, The best epoch 53 has the minimum validation loss 0.10644689947366714
+2025-03-17 20:36:26,747 - Start of epoch 54
+2025-03-17 20:36:40,795 - epoch 54, Train Loss: 0.21967221796512604, Validation Loss: 0.1064533144235611, Time taken: 14.047382593154907, The best epoch 53 has the minimum validation loss 0.10644689947366714
+2025-03-17 20:36:42,580 - Start of epoch 55
+2025-03-17 20:36:55,777 - epoch 55, Train Loss: 0.21948212385177612, Validation Loss: 0.10647569596767426, Time taken: 13.195092916488647, The best epoch 53 has the minimum validation loss 0.10644689947366714
+2025-03-17 20:36:57,491 - Start of epoch 56
+2025-03-17 20:37:12,084 - Saved checkpoint path for step 5601 in epoch 56: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-45
+2025-03-17 20:37:12,086 - epoch 56, Train Loss: 0.2195710688829422, Validation Loss: 0.10638543218374252, Time taken: 14.59455919265747, The best epoch 56 has the minimum validation loss 0.10638543218374252
+2025-03-17 20:37:13,933 - Start of epoch 57
+2025-03-17 20:37:27,679 - epoch 57, Train Loss: 0.21951793134212494, Validation Loss: 0.10652120411396027, Time taken: 13.745416402816772, The best epoch 56 has the minimum validation loss 0.10638543218374252
+2025-03-17 20:37:29,423 - Start of epoch 58
+2025-03-17 20:37:43,360 - epoch 58, Train Loss: 0.2192591428756714, Validation Loss: 0.10641177743673325, Time taken: 13.935993432998657, The best epoch 56 has the minimum validation loss 0.10638543218374252
+2025-03-17 20:37:45,027 - Start of epoch 59
+2025-03-17 20:37:58,970 - Saved checkpoint path for step 5901 in epoch 59: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-46
+2025-03-17 20:37:58,973 - epoch 59, Train Loss: 0.21924595534801483, Validation Loss: 0.1062300056219101, Time taken: 13.944509983062744, The best epoch 59 has the minimum validation loss 0.1062300056219101
+2025-03-17 20:38:00,660 - Start of epoch 60
+2025-03-17 20:38:14,845 - epoch 60, Train Loss: 0.21909105777740479, Validation Loss: 0.1062847226858139, Time taken: 14.183659553527832, The best epoch 59 has the minimum validation loss 0.1062300056219101
+2025-03-17 20:38:16,521 - Start of epoch 61
+2025-03-17 20:38:31,302 - Saved checkpoint path for step 6101 in epoch 61: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-47
+2025-03-17 20:38:31,304 - epoch 61, Train Loss: 0.21889634430408478, Validation Loss: 0.10611671209335327, Time taken: 14.78175663948059, The best epoch 61 has the minimum validation loss 0.10611671209335327
+2025-03-17 20:38:33,008 - Start of epoch 62
+2025-03-17 20:38:53,054 - epoch 62, Train Loss: 0.2187543660402298, Validation Loss: 0.10617674887180328, Time taken: 20.04506206512451, The best epoch 61 has the minimum validation loss 0.10611671209335327
+2025-03-17 20:38:54,725 - Start of epoch 63
+2025-03-17 20:39:08,986 - epoch 63, Train Loss: 0.21875885128974915, Validation Loss: 0.10618722438812256, Time taken: 14.26033353805542, The best epoch 61 has the minimum validation loss 0.10611671209335327
+2025-03-17 20:39:10,686 - Start of epoch 64
+2025-03-17 20:39:23,713 - epoch 64, Train Loss: 0.21864303946495056, Validation Loss: 0.10613254457712173, Time taken: 13.027127504348755, The best epoch 61 has the minimum validation loss 0.10611671209335327
+2025-03-17 20:39:25,241 - Start of epoch 65
+2025-03-17 20:39:38,902 - Saved checkpoint path for step 6501 in epoch 65: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-48
+2025-03-17 20:39:38,903 - epoch 65, Train Loss: 0.21840934455394745, Validation Loss: 0.10589113086462021, Time taken: 13.662106990814209, The best epoch 65 has the minimum validation loss 0.10589113086462021
+2025-03-17 20:39:40,620 - Start of epoch 66
+2025-03-17 20:39:54,094 - Saved checkpoint path for step 6601 in epoch 66: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-49
+2025-03-17 20:39:54,096 - epoch 66, Train Loss: 0.21829864382743835, Validation Loss: 0.1058167964220047, Time taken: 13.475884914398193, The best epoch 66 has the minimum validation loss 0.1058167964220047
+2025-03-17 20:39:55,734 - Start of epoch 67
+2025-03-17 20:40:08,849 - epoch 67, Train Loss: 0.21821586787700653, Validation Loss: 0.10600201785564423, Time taken: 13.113829135894775, The best epoch 66 has the minimum validation loss 0.1058167964220047
+2025-03-17 20:40:10,353 - Start of epoch 68
+2025-03-17 20:40:24,004 - epoch 68, Train Loss: 0.21812200546264648, Validation Loss: 0.10585857927799225, Time taken: 13.649775505065918, The best epoch 66 has the minimum validation loss 0.1058167964220047
+2025-03-17 20:40:25,724 - Start of epoch 69
+2025-03-17 20:40:39,238 - Saved checkpoint path for step 6901 in epoch 69: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-50
+2025-03-17 20:40:39,240 - epoch 69, Train Loss: 0.2178092896938324, Validation Loss: 0.10565610229969025, Time taken: 13.515657424926758, The best epoch 69 has the minimum validation loss 0.10565610229969025
+2025-03-17 20:40:40,969 - Start of epoch 70
+2025-03-17 20:40:54,323 - epoch 70, Train Loss: 0.21775202453136444, Validation Loss: 0.10581418126821518, Time taken: 13.353331327438354, The best epoch 69 has the minimum validation loss 0.10565610229969025
+2025-03-17 20:40:56,301 - Start of epoch 71
+2025-03-17 20:41:09,474 - epoch 71, Train Loss: 0.2177916318178177, Validation Loss: 0.10570330917835236, Time taken: 13.172609567642212, The best epoch 69 has the minimum validation loss 0.10565610229969025
+2025-03-17 20:41:10,982 - Start of epoch 72
+2025-03-17 20:41:24,056 - epoch 72, Train Loss: 0.21767085790634155, Validation Loss: 0.10577615350484848, Time taken: 13.073673963546753, The best epoch 69 has the minimum validation loss 0.10565610229969025
+2025-03-17 20:41:25,775 - Start of epoch 73
+2025-03-17 20:41:39,443 - epoch 73, Train Loss: 0.21761585772037506, Validation Loss: 0.1056673675775528, Time taken: 13.666999101638794, The best epoch 69 has the minimum validation loss 0.10565610229969025
+2025-03-17 20:41:41,151 - Start of epoch 74
+2025-03-17 20:41:55,548 - Saved checkpoint path for step 7401 in epoch 74: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-51
+2025-03-17 20:41:55,550 - epoch 74, Train Loss: 0.2177223563194275, Validation Loss: 0.10543707758188248, Time taken: 14.399089574813843, The best epoch 74 has the minimum validation loss 0.10543707758188248
+2025-03-17 20:41:57,164 - Start of epoch 75
+2025-03-17 20:42:10,890 - Saved checkpoint path for step 7501 in epoch 75: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-52
+2025-03-17 20:42:10,892 - epoch 75, Train Loss: 0.21742649376392365, Validation Loss: 0.10541834682226181, Time taken: 13.727091550827026, The best epoch 75 has the minimum validation loss 0.10541834682226181
+2025-03-17 20:42:12,515 - Start of epoch 76
+2025-03-17 20:42:33,549 - epoch 76, Train Loss: 0.21725961565971375, Validation Loss: 0.10548301786184311, Time taken: 21.03400468826294, The best epoch 75 has the minimum validation loss 0.10541834682226181
+2025-03-17 20:42:35,357 - Start of epoch 77
+2025-03-17 20:42:49,603 - Saved checkpoint path for step 7701 in epoch 77: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-53
+2025-03-17 20:42:49,605 - epoch 77, Train Loss: 0.21727825701236725, Validation Loss: 0.10536869615316391, Time taken: 14.247513055801392, The best epoch 77 has the minimum validation loss 0.10536869615316391
+2025-03-17 20:42:51,139 - Start of epoch 78
+2025-03-17 20:43:05,006 - Saved checkpoint path for step 7801 in epoch 78: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-54
+2025-03-17 20:43:05,008 - epoch 78, Train Loss: 0.21702603995800018, Validation Loss: 0.10532015562057495, Time taken: 13.868441820144653, The best epoch 78 has the minimum validation loss 0.10532015562057495
+2025-03-17 20:43:06,592 - Start of epoch 79
+2025-03-17 20:43:20,441 - Saved checkpoint path for step 7901 in epoch 79: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-55
+2025-03-17 20:43:20,443 - epoch 79, Train Loss: 0.21703070402145386, Validation Loss: 0.10528852790594101, Time taken: 13.850332260131836, The best epoch 79 has the minimum validation loss 0.10528852790594101
+2025-03-17 20:43:22,036 - Start of epoch 80
+2025-03-17 20:43:36,537 - Saved checkpoint path for step 8001 in epoch 80: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-56
+2025-03-17 20:43:36,539 - epoch 80, Train Loss: 0.21689337491989136, Validation Loss: 0.10521195083856583, Time taken: 14.502028465270996, The best epoch 80 has the minimum validation loss 0.10521195083856583
+2025-03-17 20:43:38,069 - Start of epoch 81
+2025-03-17 20:43:51,610 - epoch 81, Train Loss: 0.21692487597465515, Validation Loss: 0.10540537536144257, Time taken: 13.540147066116333, The best epoch 80 has the minimum validation loss 0.10521195083856583
+2025-03-17 20:43:53,135 - Start of epoch 82
+2025-03-17 20:44:07,245 - epoch 82, Train Loss: 0.21674242615699768, Validation Loss: 0.10535744577646255, Time taken: 14.109286069869995, The best epoch 80 has the minimum validation loss 0.10521195083856583
+2025-03-17 20:44:08,784 - Start of epoch 83
+2025-03-17 20:44:22,211 - Saved checkpoint path for step 8301 in epoch 83: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-57
+2025-03-17 20:44:22,213 - epoch 83, Train Loss: 0.2166549563407898, Validation Loss: 0.10519880056381226, Time taken: 13.428544282913208, The best epoch 83 has the minimum validation loss 0.10519880056381226
+2025-03-17 20:44:23,851 - Start of epoch 84
+2025-03-17 20:44:37,769 - Saved checkpoint path for step 8401 in epoch 84: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-58
+2025-03-17 20:44:37,771 - epoch 84, Train Loss: 0.21657341718673706, Validation Loss: 0.10512663424015045, Time taken: 13.919496059417725, The best epoch 84 has the minimum validation loss 0.10512663424015045
+2025-03-17 20:44:39,527 - Start of epoch 85
+2025-03-17 20:44:53,253 - Saved checkpoint path for step 8501 in epoch 85: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-59
+2025-03-17 20:44:53,256 - epoch 85, Train Loss: 0.21654675900936127, Validation Loss: 0.10507192462682724, Time taken: 13.727351427078247, The best epoch 85 has the minimum validation loss 0.10507192462682724
+2025-03-17 20:44:55,087 - Start of epoch 86
+2025-03-17 20:45:09,483 - Saved checkpoint path for step 8601 in epoch 86: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-60
+2025-03-17 20:45:09,485 - epoch 86, Train Loss: 0.21640288829803467, Validation Loss: 0.10498903691768646, Time taken: 14.396637678146362, The best epoch 86 has the minimum validation loss 0.10498903691768646
+2025-03-17 20:45:11,242 - Start of epoch 87
+2025-03-17 20:45:24,942 - epoch 87, Train Loss: 0.21649807691574097, Validation Loss: 0.10517571121454239, Time taken: 13.699025630950928, The best epoch 86 has the minimum validation loss 0.10498903691768646
+2025-03-17 20:45:26,696 - Start of epoch 88
+2025-03-17 20:45:40,750 - epoch 88, Train Loss: 0.21625196933746338, Validation Loss: 0.10499481856822968, Time taken: 14.053718090057373, The best epoch 86 has the minimum validation loss 0.10498903691768646
+2025-03-17 20:45:42,279 - Start of epoch 89
+2025-03-17 20:45:55,572 - epoch 89, Train Loss: 0.21611814200878143, Validation Loss: 0.10500581562519073, Time taken: 13.292444229125977, The best epoch 86 has the minimum validation loss 0.10498903691768646
+2025-03-17 20:45:57,277 - Start of epoch 90
+2025-03-17 20:46:11,658 - Saved checkpoint path for step 9001 in epoch 90: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-61
+2025-03-17 20:46:11,660 - epoch 90, Train Loss: 0.21611161530017853, Validation Loss: 0.1049727201461792, Time taken: 14.382994413375854, The best epoch 90 has the minimum validation loss 0.1049727201461792
+2025-03-17 20:46:13,502 - Start of epoch 91
+2025-03-17 20:46:26,490 - epoch 91, Train Loss: 0.2160726934671402, Validation Loss: 0.10502423346042633, Time taken: 12.98597526550293, The best epoch 90 has the minimum validation loss 0.1049727201461792
+2025-03-17 20:46:28,112 - Start of epoch 92
+2025-03-17 20:46:51,423 - epoch 92, Train Loss: 0.21602435410022736, Validation Loss: 0.10531868785619736, Time taken: 23.310331344604492, The best epoch 90 has the minimum validation loss 0.1049727201461792
+2025-03-17 20:46:53,102 - Start of epoch 93
+2025-03-17 20:47:07,394 - Saved checkpoint path for step 9301 in epoch 93: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-62
+2025-03-17 20:47:07,396 - epoch 93, Train Loss: 0.21610356867313385, Validation Loss: 0.10489434003829956, Time taken: 14.292430639266968, The best epoch 93 has the minimum validation loss 0.10489434003829956
+2025-03-17 20:47:08,915 - Start of epoch 94
+2025-03-17 20:47:23,087 - Saved checkpoint path for step 9401 in epoch 94: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-63
+2025-03-17 20:47:23,089 - epoch 94, Train Loss: 0.21583950519561768, Validation Loss: 0.10473959147930145, Time taken: 14.173675060272217, The best epoch 94 has the minimum validation loss 0.10473959147930145
+2025-03-17 20:47:24,759 - Start of epoch 95
+2025-03-17 20:47:38,853 - epoch 95, Train Loss: 0.2158580720424652, Validation Loss: 0.10476584732532501, Time taken: 14.092619180679321, The best epoch 94 has the minimum validation loss 0.10473959147930145
+2025-03-17 20:47:40,747 - Start of epoch 96
+2025-03-17 20:47:54,737 - Saved checkpoint path for step 9601 in epoch 96: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-64
+2025-03-17 20:47:54,739 - epoch 96, Train Loss: 0.215799480676651, Validation Loss: 0.1047254353761673, Time taken: 13.990604639053345, The best epoch 96 has the minimum validation loss 0.1047254353761673
+2025-03-17 20:47:56,305 - Start of epoch 97
+2025-03-17 20:48:09,601 - Saved checkpoint path for step 9701 in epoch 97: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-65
+2025-03-17 20:48:09,603 - epoch 97, Train Loss: 0.2156573235988617, Validation Loss: 0.10470191389322281, Time taken: 13.297818660736084, The best epoch 97 has the minimum validation loss 0.10470191389322281
+2025-03-17 20:48:11,458 - Start of epoch 98
+2025-03-17 20:48:24,528 - epoch 98, Train Loss: 0.21556909382343292, Validation Loss: 0.10495295375585556, Time taken: 13.069095373153687, The best epoch 97 has the minimum validation loss 0.10470191389322281
+2025-03-17 20:48:26,221 - Start of epoch 99
+2025-03-17 20:48:40,140 - epoch 99, Train Loss: 0.21565377712249756, Validation Loss: 0.10509505122900009, Time taken: 13.91820240020752, The best epoch 97 has the minimum validation loss 0.10470191389322281
+2025-03-17 20:48:42,015 - Start of epoch 100
+2025-03-17 20:48:55,848 - Saved checkpoint path for step 10001 in epoch 100: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-66
+2025-03-17 20:48:55,850 - epoch 100, Train Loss: 0.21554096043109894, Validation Loss: 0.10461108386516571, Time taken: 13.833822250366211, The best epoch 100 has the minimum validation loss 0.10461108386516571
+2025-03-17 20:48:59,245 - Start of epoch 101
+2025-03-17 20:49:17,248 - Saved checkpoint path for step 10101 in epoch 101: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-67
+2025-03-17 20:49:17,250 - epoch 101, Train Loss: 0.2154017835855484, Validation Loss: 0.10459351539611816, Time taken: 18.003544330596924, The best epoch 101 has the minimum validation loss 0.10459351539611816
+2025-03-17 20:49:18,958 - Start of epoch 102
+2025-03-17 20:49:33,540 - Saved checkpoint path for step 10201 in epoch 102: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-68
+2025-03-17 20:49:33,542 - epoch 102, Train Loss: 0.2154078632593155, Validation Loss: 0.10459069907665253, Time taken: 14.582911491394043, The best epoch 102 has the minimum validation loss 0.10459069907665253
+2025-03-17 20:49:35,333 - Start of epoch 103
+2025-03-17 20:49:49,432 - Saved checkpoint path for step 10301 in epoch 103: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-69
+2025-03-17 20:49:49,434 - epoch 103, Train Loss: 0.21529731154441833, Validation Loss: 0.10453077405691147, Time taken: 14.10045862197876, The best epoch 103 has the minimum validation loss 0.10453077405691147
+2025-03-17 20:49:51,085 - Start of epoch 104
+2025-03-17 20:50:04,333 - epoch 104, Train Loss: 0.21531443297863007, Validation Loss: 0.10455790907144547, Time taken: 13.247391700744629, The best epoch 103 has the minimum validation loss 0.10453077405691147
+2025-03-17 20:50:06,011 - Start of epoch 105
+2025-03-17 20:50:19,186 - epoch 105, Train Loss: 0.215383380651474, Validation Loss: 0.10465940088033676, Time taken: 13.174808979034424, The best epoch 103 has the minimum validation loss 0.10453077405691147
+2025-03-17 20:50:20,857 - Start of epoch 106
+2025-03-17 20:50:34,026 - epoch 106, Train Loss: 0.21521228551864624, Validation Loss: 0.10457128286361694, Time taken: 13.167731761932373, The best epoch 103 has the minimum validation loss 0.10453077405691147
+2025-03-17 20:50:35,696 - Start of epoch 107
+2025-03-17 20:50:49,605 - Saved checkpoint path for step 10701 in epoch 107: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-70
+2025-03-17 20:50:49,607 - epoch 107, Train Loss: 0.21506759524345398, Validation Loss: 0.10452266782522202, Time taken: 13.909709215164185, The best epoch 107 has the minimum validation loss 0.10452266782522202
+2025-03-17 20:50:51,382 - Start of epoch 108
+2025-03-17 20:51:04,830 - epoch 108, Train Loss: 0.21513952314853668, Validation Loss: 0.10462949424982071, Time taken: 13.447594165802002, The best epoch 107 has the minimum validation loss 0.10452266782522202
+2025-03-17 20:51:06,747 - Start of epoch 109
+2025-03-17 20:51:21,417 - Saved checkpoint path for step 10901 in epoch 109: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-71
+2025-03-17 20:51:21,419 - epoch 109, Train Loss: 0.21501463651657104, Validation Loss: 0.10441964864730835, Time taken: 14.67139220237732, The best epoch 109 has the minimum validation loss 0.10441964864730835
+2025-03-17 20:51:24,128 - Start of epoch 110
+2025-03-17 20:51:38,720 - Saved checkpoint path for step 11001 in epoch 110: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-72
+2025-03-17 20:51:38,721 - epoch 110, Train Loss: 0.2149936705827713, Validation Loss: 0.1043633446097374, Time taken: 14.592491865158081, The best epoch 110 has the minimum validation loss 0.1043633446097374
+2025-03-17 20:51:40,579 - Start of epoch 111
+2025-03-17 20:51:54,725 - Saved checkpoint path for step 11101 in epoch 111: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-73
+2025-03-17 20:51:54,727 - epoch 111, Train Loss: 0.21499711275100708, Validation Loss: 0.10432549566030502, Time taken: 14.147652864456177, The best epoch 111 has the minimum validation loss 0.10432549566030502
+2025-03-17 20:51:56,304 - Start of epoch 112
+2025-03-17 20:52:21,530 - Saved checkpoint path for step 11201 in epoch 112: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-74
+2025-03-17 20:52:21,532 - epoch 112, Train Loss: 0.21492032706737518, Validation Loss: 0.10431990772485733, Time taken: 25.227357864379883, The best epoch 112 has the minimum validation loss 0.10431990772485733
+2025-03-17 20:52:23,212 - Start of epoch 113
+2025-03-17 20:52:36,822 - epoch 113, Train Loss: 0.21503816545009613, Validation Loss: 0.10445256531238556, Time taken: 13.608799695968628, The best epoch 112 has the minimum validation loss 0.10431990772485733
+2025-03-17 20:52:38,722 - Start of epoch 114
+2025-03-17 20:52:52,897 - Saved checkpoint path for step 11401 in epoch 114: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-75
+2025-03-17 20:52:52,899 - epoch 114, Train Loss: 0.21473273634910583, Validation Loss: 0.10426013171672821, Time taken: 14.176087617874146, The best epoch 114 has the minimum validation loss 0.10426013171672821
+2025-03-17 20:52:54,492 - Start of epoch 115
+2025-03-17 20:53:08,052 - epoch 115, Train Loss: 0.2146841585636139, Validation Loss: 0.10430172830820084, Time taken: 13.558749914169312, The best epoch 114 has the minimum validation loss 0.10426013171672821
+2025-03-17 20:53:09,822 - Start of epoch 116
+2025-03-17 20:53:22,905 - epoch 116, Train Loss: 0.21479544043540955, Validation Loss: 0.10440851747989655, Time taken: 13.081505060195923, The best epoch 114 has the minimum validation loss 0.10426013171672821
+2025-03-17 20:53:24,615 - Start of epoch 117
+2025-03-17 20:53:37,720 - Saved checkpoint path for step 11701 in epoch 117: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-76
+2025-03-17 20:53:37,722 - epoch 117, Train Loss: 0.21457861363887787, Validation Loss: 0.10421093553304672, Time taken: 13.106468677520752, The best epoch 117 has the minimum validation loss 0.10421093553304672
+2025-03-17 20:53:39,617 - Start of epoch 118
+2025-03-17 20:53:52,964 - Saved checkpoint path for step 11801 in epoch 118: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-77
+2025-03-17 20:53:52,966 - epoch 118, Train Loss: 0.21454796195030212, Validation Loss: 0.1041821613907814, Time taken: 13.347571611404419, The best epoch 118 has the minimum validation loss 0.1041821613907814
+2025-03-17 20:53:54,632 - Start of epoch 119
+2025-03-17 20:54:08,727 - epoch 119, Train Loss: 0.2145085483789444, Validation Loss: 0.10421404987573624, Time taken: 14.095069885253906, The best epoch 118 has the minimum validation loss 0.1041821613907814
+2025-03-17 20:54:10,524 - Start of epoch 120
+2025-03-17 20:54:24,356 - Saved checkpoint path for step 12001 in epoch 120: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-78
+2025-03-17 20:54:24,359 - epoch 120, Train Loss: 0.2144566923379898, Validation Loss: 0.10413720458745956, Time taken: 13.833898305892944, The best epoch 120 has the minimum validation loss 0.10413720458745956
+2025-03-17 20:54:26,019 - Start of epoch 121
+2025-03-17 20:54:39,236 - epoch 121, Train Loss: 0.214530348777771, Validation Loss: 0.10415874421596527, Time taken: 13.216298341751099, The best epoch 120 has the minimum validation loss 0.10413720458745956
+2025-03-17 20:54:41,071 - Start of epoch 122
+2025-03-17 20:54:54,049 - epoch 122, Train Loss: 0.21448150277137756, Validation Loss: 0.10418488085269928, Time taken: 12.977026224136353, The best epoch 120 has the minimum validation loss 0.10413720458745956
+2025-03-17 20:54:56,133 - Start of epoch 123
+2025-03-17 20:55:09,518 - epoch 123, Train Loss: 0.21437188982963562, Validation Loss: 0.10422515869140625, Time taken: 13.38454794883728, The best epoch 120 has the minimum validation loss 0.10413720458745956
+2025-03-17 20:55:11,220 - Start of epoch 124
+2025-03-17 20:55:25,249 - epoch 124, Train Loss: 0.21440908312797546, Validation Loss: 0.10415011644363403, Time taken: 14.028974771499634, The best epoch 120 has the minimum validation loss 0.10413720458745956
+2025-03-17 20:55:26,805 - Start of epoch 125
+2025-03-17 20:55:41,000 - epoch 125, Train Loss: 0.21438367664813995, Validation Loss: 0.10416261106729507, Time taken: 14.19485855102539, The best epoch 120 has the minimum validation loss 0.10413720458745956
+2025-03-17 20:55:42,763 - Start of epoch 126
+2025-03-17 20:55:56,727 - Saved checkpoint path for step 12601 in epoch 126: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-79
+2025-03-17 20:55:56,729 - epoch 126, Train Loss: 0.21421155333518982, Validation Loss: 0.10406728088855743, Time taken: 13.964945316314697, The best epoch 126 has the minimum validation loss 0.10406728088855743
+2025-03-17 20:55:58,548 - Start of epoch 127
+2025-03-17 20:56:12,466 - epoch 127, Train Loss: 0.21419204771518707, Validation Loss: 0.10418985784053802, Time taken: 13.91738486289978, The best epoch 126 has the minimum validation loss 0.10406728088855743
+2025-03-17 20:56:14,223 - Start of epoch 128
+2025-03-17 20:56:28,035 - epoch 128, Train Loss: 0.21422147750854492, Validation Loss: 0.10436899960041046, Time taken: 13.81105375289917, The best epoch 126 has the minimum validation loss 0.10406728088855743
+2025-03-17 20:56:29,636 - Start of epoch 129
+2025-03-17 20:56:43,452 - epoch 129, Train Loss: 0.21413028240203857, Validation Loss: 0.1040744036436081, Time taken: 13.815311193466187, The best epoch 126 has the minimum validation loss 0.10406728088855743
+2025-03-17 20:56:44,977 - Start of epoch 130
+2025-03-17 20:56:58,842 - epoch 130, Train Loss: 0.2140759825706482, Validation Loss: 0.1040738970041275, Time taken: 13.864559412002563, The best epoch 126 has the minimum validation loss 0.10406728088855743
+2025-03-17 20:57:00,635 - Start of epoch 131
+2025-03-17 20:57:15,004 - Saved checkpoint path for step 13101 in epoch 131: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-80
+2025-03-17 20:57:15,006 - epoch 131, Train Loss: 0.21408988535404205, Validation Loss: 0.10400356352329254, Time taken: 14.37006664276123, The best epoch 131 has the minimum validation loss 0.10400356352329254
+2025-03-17 20:57:16,719 - Start of epoch 132
+2025-03-17 20:57:29,831 - epoch 132, Train Loss: 0.21416011452674866, Validation Loss: 0.10409955680370331, Time taken: 13.111774682998657, The best epoch 131 has the minimum validation loss 0.10400356352329254
+2025-03-17 20:57:31,498 - Start of epoch 133
+2025-03-17 20:57:45,468 - Saved checkpoint path for step 13301 in epoch 133: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-81
+2025-03-17 20:57:45,470 - epoch 133, Train Loss: 0.21409441530704498, Validation Loss: 0.10397599637508392, Time taken: 13.970791101455688, The best epoch 133 has the minimum validation loss 0.10397599637508392
+2025-03-17 20:57:47,138 - Start of epoch 134
+2025-03-17 20:58:00,499 - Saved checkpoint path for step 13401 in epoch 134: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-82
+2025-03-17 20:58:00,501 - epoch 134, Train Loss: 0.21397742629051208, Validation Loss: 0.10397353023290634, Time taken: 13.361762762069702, The best epoch 134 has the minimum validation loss 0.10397353023290634
+2025-03-17 20:58:02,153 - Start of epoch 135
+2025-03-17 20:58:16,226 - epoch 135, Train Loss: 0.21403034031391144, Validation Loss: 0.10400453954935074, Time taken: 14.07208800315857, The best epoch 134 has the minimum validation loss 0.10397353023290634
+2025-03-17 20:58:17,768 - Start of epoch 136
+2025-03-17 20:58:44,954 - Saved checkpoint path for step 13601 in epoch 136: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-83
+2025-03-17 20:58:44,956 - epoch 136, Train Loss: 0.2139481157064438, Validation Loss: 0.10393750667572021, Time taken: 27.187016248703003, The best epoch 136 has the minimum validation loss 0.10393750667572021
+2025-03-17 20:58:47,010 - Start of epoch 137
+2025-03-17 20:59:00,923 - epoch 137, Train Loss: 0.21396134793758392, Validation Loss: 0.10398036241531372, Time taken: 13.911585330963135, The best epoch 136 has the minimum validation loss 0.10393750667572021
+2025-03-17 20:59:02,697 - Start of epoch 138
+2025-03-17 20:59:16,881 - Saved checkpoint path for step 13801 in epoch 138: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-84
+2025-03-17 20:59:16,883 - epoch 138, Train Loss: 0.21387380361557007, Validation Loss: 0.10388793051242828, Time taken: 14.18401575088501, The best epoch 138 has the minimum validation loss 0.10388793051242828
+2025-03-17 20:59:18,608 - Start of epoch 139
+2025-03-17 20:59:32,781 - epoch 139, Train Loss: 0.21381691098213196, Validation Loss: 0.10394519567489624, Time taken: 14.171958208084106, The best epoch 138 has the minimum validation loss 0.10388793051242828
+2025-03-17 20:59:34,558 - Start of epoch 140
+2025-03-17 20:59:49,084 - Saved checkpoint path for step 14001 in epoch 140: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-85
+2025-03-17 20:59:49,087 - epoch 140, Train Loss: 0.21385051310062408, Validation Loss: 0.1038738489151001, Time taken: 14.527981996536255, The best epoch 140 has the minimum validation loss 0.1038738489151001
+2025-03-17 20:59:50,580 - Start of epoch 141
+2025-03-17 21:00:04,417 - epoch 141, Train Loss: 0.213765487074852, Validation Loss: 0.103975810110569, Time taken: 13.836294412612915, The best epoch 140 has the minimum validation loss 0.1038738489151001
+2025-03-17 21:00:06,199 - Start of epoch 142
+2025-03-17 21:00:20,092 - Saved checkpoint path for step 14201 in epoch 142: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-86
+2025-03-17 21:00:20,094 - epoch 142, Train Loss: 0.2137351632118225, Validation Loss: 0.10384152829647064, Time taken: 13.893616914749146, The best epoch 142 has the minimum validation loss 0.10384152829647064
+2025-03-17 21:00:21,845 - Start of epoch 143
+2025-03-17 21:00:35,053 - epoch 143, Train Loss: 0.21379432082176208, Validation Loss: 0.10393647849559784, Time taken: 13.207983493804932, The best epoch 142 has the minimum validation loss 0.10384152829647064
+2025-03-17 21:00:36,604 - Start of epoch 144
+2025-03-17 21:00:49,920 - epoch 144, Train Loss: 0.21369805932044983, Validation Loss: 0.10391721874475479, Time taken: 13.315539836883545, The best epoch 142 has the minimum validation loss 0.10384152829647064
+2025-03-17 21:00:51,491 - Start of epoch 145
+2025-03-17 21:01:05,456 - Saved checkpoint path for step 14501 in epoch 145: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-87
+2025-03-17 21:01:05,458 - epoch 145, Train Loss: 0.2135961353778839, Validation Loss: 0.10383515059947968, Time taken: 13.96689486503601, The best epoch 145 has the minimum validation loss 0.10383515059947968
+2025-03-17 21:01:07,101 - Start of epoch 146
+2025-03-17 21:01:21,265 - epoch 146, Train Loss: 0.21367497742176056, Validation Loss: 0.1039179190993309, Time taken: 14.16370964050293, The best epoch 145 has the minimum validation loss 0.10383515059947968
+2025-03-17 21:01:22,880 - Start of epoch 147
+2025-03-17 21:01:37,396 - Saved checkpoint path for step 14701 in epoch 147: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-88
+2025-03-17 21:01:37,398 - epoch 147, Train Loss: 0.2135828584432602, Validation Loss: 0.10379849374294281, Time taken: 14.5168936252594, The best epoch 147 has the minimum validation loss 0.10379849374294281
+2025-03-17 21:01:38,902 - Start of epoch 148
+2025-03-17 21:01:53,360 - Saved checkpoint path for step 14801 in epoch 148: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-89
+2025-03-17 21:01:53,362 - epoch 148, Train Loss: 0.21357184648513794, Validation Loss: 0.10377542674541473, Time taken: 14.459847450256348, The best epoch 148 has the minimum validation loss 0.10377542674541473
+2025-03-17 21:01:55,078 - Start of epoch 149
+2025-03-17 21:02:08,776 - epoch 149, Train Loss: 0.2135218381881714, Validation Loss: 0.10385917127132416, Time taken: 13.697258949279785, The best epoch 148 has the minimum validation loss 0.10377542674541473
+2025-03-17 21:02:10,459 - Start of epoch 150
+2025-03-17 21:02:23,746 - epoch 150, Train Loss: 0.2135097086429596, Validation Loss: 0.10387401282787323, Time taken: 13.286625385284424, The best epoch 148 has the minimum validation loss 0.10377542674541473
+2025-03-17 21:02:25,241 - Start of epoch 151
+2025-03-17 21:02:39,274 - Saved checkpoint path for step 15101 in epoch 151: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-90
+2025-03-17 21:02:39,276 - epoch 151, Train Loss: 0.21343359351158142, Validation Loss: 0.10370012372732162, Time taken: 14.034549951553345, The best epoch 151 has the minimum validation loss 0.10370012372732162
+2025-03-17 21:02:40,953 - Start of epoch 152
+2025-03-17 21:02:55,053 - epoch 152, Train Loss: 0.21343174576759338, Validation Loss: 0.10377049446105957, Time taken: 14.098622798919678, The best epoch 151 has the minimum validation loss 0.10370012372732162
+2025-03-17 21:02:56,737 - Start of epoch 153
+2025-03-17 21:03:10,468 - epoch 153, Train Loss: 0.21342121064662933, Validation Loss: 0.10397724062204361, Time taken: 13.729862689971924, The best epoch 151 has the minimum validation loss 0.10370012372732162
+2025-03-17 21:03:12,258 - Start of epoch 154
+2025-03-17 21:03:25,976 - Saved checkpoint path for step 15401 in epoch 154: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-91
+2025-03-17 21:03:25,978 - epoch 154, Train Loss: 0.21339736878871918, Validation Loss: 0.10368487983942032, Time taken: 13.71948504447937, The best epoch 154 has the minimum validation loss 0.10368487983942032
+2025-03-17 21:03:27,785 - Start of epoch 155
+2025-03-17 21:03:41,478 - epoch 155, Train Loss: 0.21324422955513, Validation Loss: 0.10369803011417389, Time taken: 13.691644191741943, The best epoch 154 has the minimum validation loss 0.10368487983942032
+2025-03-17 21:03:43,025 - Start of epoch 156
+2025-03-17 21:03:57,019 - epoch 156, Train Loss: 0.21325528621673584, Validation Loss: 0.10375498235225677, Time taken: 13.993406772613525, The best epoch 154 has the minimum validation loss 0.10368487983942032
+2025-03-17 21:03:59,044 - Start of epoch 157
+2025-03-17 21:04:12,578 - Saved checkpoint path for step 15701 in epoch 157: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-92
+2025-03-17 21:04:12,580 - epoch 157, Train Loss: 0.21322038769721985, Validation Loss: 0.10362976789474487, Time taken: 13.534706115722656, The best epoch 157 has the minimum validation loss 0.10362976789474487
+2025-03-17 21:04:14,377 - Start of epoch 158
+2025-03-17 21:04:28,166 - epoch 158, Train Loss: 0.213250070810318, Validation Loss: 0.10366586595773697, Time taken: 13.787271738052368, The best epoch 157 has the minimum validation loss 0.10362976789474487
+2025-03-17 21:04:29,941 - Start of epoch 159
+2025-03-17 21:04:44,023 - epoch 159, Train Loss: 0.21327146887779236, Validation Loss: 0.10370157659053802, Time taken: 14.081578016281128, The best epoch 157 has the minimum validation loss 0.10362976789474487
+2025-03-17 21:04:45,681 - Start of epoch 160
+2025-03-17 21:04:59,573 - epoch 160, Train Loss: 0.21328283846378326, Validation Loss: 0.10371322929859161, Time taken: 13.891176700592041, The best epoch 157 has the minimum validation loss 0.10362976789474487
+2025-03-17 21:05:01,253 - Start of epoch 161
+2025-03-17 21:05:15,447 - Saved checkpoint path for step 16101 in epoch 161: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-93
+2025-03-17 21:05:15,449 - epoch 161, Train Loss: 0.2131836861371994, Validation Loss: 0.10361210256814957, Time taken: 14.194871664047241, The best epoch 161 has the minimum validation loss 0.10361210256814957
+2025-03-17 21:05:17,351 - Start of epoch 162
+2025-03-17 21:05:30,729 - Saved checkpoint path for step 16201 in epoch 162: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-94
+2025-03-17 21:05:30,731 - epoch 162, Train Loss: 0.21309442818164825, Validation Loss: 0.10358810424804688, Time taken: 13.379337310791016, The best epoch 162 has the minimum validation loss 0.10358810424804688
+2025-03-17 21:05:32,337 - Start of epoch 163
+2025-03-17 21:05:45,699 - epoch 163, Train Loss: 0.2130650281906128, Validation Loss: 0.10372773557901382, Time taken: 13.360329151153564, The best epoch 162 has the minimum validation loss 0.10358810424804688
+2025-03-17 21:05:47,409 - Start of epoch 164
+2025-03-17 21:06:00,979 - epoch 164, Train Loss: 0.21303223073482513, Validation Loss: 0.10365114361047745, Time taken: 13.568947792053223, The best epoch 162 has the minimum validation loss 0.10358810424804688
+2025-03-17 21:06:02,657 - Start of epoch 165
+2025-03-17 21:06:33,863 - Saved checkpoint path for step 16501 in epoch 165: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-95
+2025-03-17 21:06:33,865 - epoch 165, Train Loss: 0.21302084624767303, Validation Loss: 0.10358278453350067, Time taken: 31.20691180229187, The best epoch 165 has the minimum validation loss 0.10358278453350067
+2025-03-17 21:06:35,567 - Start of epoch 166
+2025-03-17 21:06:49,244 - Saved checkpoint path for step 16601 in epoch 166: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-96
+2025-03-17 21:06:49,246 - epoch 166, Train Loss: 0.21298441290855408, Validation Loss: 0.1035652756690979, Time taken: 13.678759336471558, The best epoch 166 has the minimum validation loss 0.1035652756690979
+2025-03-17 21:06:50,980 - Start of epoch 167
+2025-03-17 21:07:04,084 - epoch 167, Train Loss: 0.21292346715927124, Validation Loss: 0.10361169278621674, Time taken: 13.10324740409851, The best epoch 166 has the minimum validation loss 0.1035652756690979
+2025-03-17 21:07:05,744 - Start of epoch 168
+2025-03-17 21:07:19,328 - Saved checkpoint path for step 16801 in epoch 168: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-97
+2025-03-17 21:07:19,330 - epoch 168, Train Loss: 0.21295076608657837, Validation Loss: 0.10348038375377655, Time taken: 13.585221290588379, The best epoch 168 has the minimum validation loss 0.10348038375377655
+2025-03-17 21:07:20,949 - Start of epoch 169
+2025-03-17 21:07:34,589 - Saved checkpoint path for step 16901 in epoch 169: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-98
+2025-03-17 21:07:34,592 - epoch 169, Train Loss: 0.21304328739643097, Validation Loss: 0.103480264544487, Time taken: 13.641758918762207, The best epoch 169 has the minimum validation loss 0.103480264544487
+2025-03-17 21:07:36,228 - Start of epoch 170
+2025-03-17 21:07:50,432 - epoch 170, Train Loss: 0.21293297410011292, Validation Loss: 0.10356882959604263, Time taken: 14.202296495437622, The best epoch 169 has the minimum validation loss 0.103480264544487
+2025-03-17 21:07:52,255 - Start of epoch 171
+2025-03-17 21:08:05,807 - epoch 171, Train Loss: 0.21284370124340057, Validation Loss: 0.10349015146493912, Time taken: 13.551109552383423, The best epoch 169 has the minimum validation loss 0.103480264544487
+2025-03-17 21:08:07,552 - Start of epoch 172
+2025-03-17 21:08:21,708 - epoch 172, Train Loss: 0.21293585002422333, Validation Loss: 0.10350386053323746, Time taken: 14.154252767562866, The best epoch 169 has the minimum validation loss 0.103480264544487
+2025-03-17 21:08:23,325 - Start of epoch 173
+2025-03-17 21:08:37,127 - Saved checkpoint path for step 17301 in epoch 173: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-99
+2025-03-17 21:08:37,129 - epoch 173, Train Loss: 0.21269316971302032, Validation Loss: 0.10342268645763397, Time taken: 13.803220987319946, The best epoch 173 has the minimum validation loss 0.10342268645763397
+2025-03-17 21:08:38,761 - Start of epoch 174
+2025-03-17 21:08:52,929 - epoch 174, Train Loss: 0.21270805597305298, Validation Loss: 0.10352524369955063, Time taken: 14.16759467124939, The best epoch 173 has the minimum validation loss 0.10342268645763397
+2025-03-17 21:08:54,652 - Start of epoch 175
+2025-03-17 21:09:08,672 - epoch 175, Train Loss: 0.212722048163414, Validation Loss: 0.10345636308193207, Time taken: 14.019614458084106, The best epoch 173 has the minimum validation loss 0.10342268645763397
+2025-03-17 21:09:10,327 - Start of epoch 176
+2025-03-17 21:09:24,628 - Saved checkpoint path for step 17601 in epoch 176: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-100
+2025-03-17 21:09:24,630 - epoch 176, Train Loss: 0.21272729337215424, Validation Loss: 0.1034122109413147, Time taken: 14.301808834075928, The best epoch 176 has the minimum validation loss 0.1034122109413147
+2025-03-17 21:09:26,247 - Start of epoch 177
+2025-03-17 21:09:39,205 - epoch 177, Train Loss: 0.2126992791891098, Validation Loss: 0.10347253084182739, Time taken: 12.956919431686401, The best epoch 176 has the minimum validation loss 0.1034122109413147
+2025-03-17 21:09:40,860 - Start of epoch 178
+2025-03-17 21:09:54,833 - epoch 178, Train Loss: 0.2126246988773346, Validation Loss: 0.10349775850772858, Time taken: 13.972606420516968, The best epoch 176 has the minimum validation loss 0.1034122109413147
+2025-03-17 21:09:56,496 - Start of epoch 179
+2025-03-17 21:10:09,863 - epoch 179, Train Loss: 0.21258774399757385, Validation Loss: 0.10341291129589081, Time taken: 13.366337537765503, The best epoch 176 has the minimum validation loss 0.1034122109413147
+2025-03-17 21:10:11,450 - Start of epoch 180
+2025-03-17 21:10:25,244 - epoch 180, Train Loss: 0.21266257762908936, Validation Loss: 0.10359064489603043, Time taken: 13.792849063873291, The best epoch 176 has the minimum validation loss 0.1034122109413147
+2025-03-17 21:10:26,869 - Start of epoch 181
+2025-03-17 21:10:40,451 - Saved checkpoint path for step 18101 in epoch 181: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-101
+2025-03-17 21:10:40,453 - epoch 181, Train Loss: 0.21264967322349548, Validation Loss: 0.10334749519824982, Time taken: 13.583574056625366, The best epoch 181 has the minimum validation loss 0.10334749519824982
+2025-03-17 21:10:42,082 - Start of epoch 182
+2025-03-17 21:10:55,606 - Saved checkpoint path for step 18201 in epoch 182: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-102
+2025-03-17 21:10:55,608 - epoch 182, Train Loss: 0.21249385178089142, Validation Loss: 0.10333625972270966, Time taken: 13.524980545043945, The best epoch 182 has the minimum validation loss 0.10333625972270966
+2025-03-17 21:10:57,141 - Start of epoch 183
+2025-03-17 21:11:10,714 - Saved checkpoint path for step 18301 in epoch 183: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-103
+2025-03-17 21:11:10,717 - epoch 183, Train Loss: 0.21251314878463745, Validation Loss: 0.10332073271274567, Time taken: 13.574625015258789, The best epoch 183 has the minimum validation loss 0.10332073271274567
+2025-03-17 21:11:12,351 - Start of epoch 184
+2025-03-17 21:11:26,450 - epoch 184, Train Loss: 0.21239088475704193, Validation Loss: 0.10337801277637482, Time taken: 14.098313570022583, The best epoch 183 has the minimum validation loss 0.10332073271274567
+2025-03-17 21:11:28,288 - Start of epoch 185
+2025-03-17 21:11:41,816 - epoch 185, Train Loss: 0.21241748332977295, Validation Loss: 0.10340895503759384, Time taken: 13.526780366897583, The best epoch 183 has the minimum validation loss 0.10332073271274567
+2025-03-17 21:11:43,516 - Start of epoch 186
+2025-03-17 21:11:57,226 - epoch 186, Train Loss: 0.21253427863121033, Validation Loss: 0.10348241031169891, Time taken: 13.710077047348022, The best epoch 183 has the minimum validation loss 0.10332073271274567
+2025-03-17 21:11:58,957 - Start of epoch 187
+2025-03-17 21:12:13,087 - Saved checkpoint path for step 18701 in epoch 187: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-104
+2025-03-17 21:12:13,089 - epoch 187, Train Loss: 0.21243390440940857, Validation Loss: 0.10331165790557861, Time taken: 14.131326913833618, The best epoch 187 has the minimum validation loss 0.10331165790557861
+2025-03-17 21:12:14,837 - Start of epoch 188
+2025-03-17 21:12:28,834 - Saved checkpoint path for step 18801 in epoch 188: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-105
+2025-03-17 21:12:28,836 - epoch 188, Train Loss: 0.21234934031963348, Validation Loss: 0.10327453911304474, Time taken: 13.997779607772827, The best epoch 188 has the minimum validation loss 0.10327453911304474
+2025-03-17 21:12:30,857 - Start of epoch 189
+2025-03-17 21:12:44,148 - epoch 189, Train Loss: 0.21230359375476837, Validation Loss: 0.10331384092569351, Time taken: 13.290509223937988, The best epoch 188 has the minimum validation loss 0.10327453911304474
+2025-03-17 21:12:45,646 - Start of epoch 190
+2025-03-17 21:12:59,386 - epoch 190, Train Loss: 0.21229363977909088, Validation Loss: 0.10329560935497284, Time taken: 13.739598035812378, The best epoch 188 has the minimum validation loss 0.10327453911304474
+2025-03-17 21:13:01,028 - Start of epoch 191
+2025-03-17 21:13:14,036 - epoch 191, Train Loss: 0.21221721172332764, Validation Loss: 0.1033046692609787, Time taken: 13.007052898406982, The best epoch 188 has the minimum validation loss 0.10327453911304474
+2025-03-17 21:13:15,793 - Start of epoch 192
+2025-03-17 21:13:29,852 - epoch 192, Train Loss: 0.2123129516839981, Validation Loss: 0.10336273908615112, Time taken: 14.058239698410034, The best epoch 188 has the minimum validation loss 0.10327453911304474
+2025-03-17 21:13:31,522 - Start of epoch 193
+2025-03-17 21:13:45,712 - Saved checkpoint path for step 19301 in epoch 193: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-106
+2025-03-17 21:13:45,714 - epoch 193, Train Loss: 0.21223342418670654, Validation Loss: 0.10321817547082901, Time taken: 14.19150972366333, The best epoch 193 has the minimum validation loss 0.10321817547082901
+2025-03-17 21:13:47,330 - Start of epoch 194
+2025-03-17 21:14:00,994 - epoch 194, Train Loss: 0.212180495262146, Validation Loss: 0.10322092473506927, Time taken: 13.662852764129639, The best epoch 193 has the minimum validation loss 0.10321817547082901
+2025-03-17 21:14:02,514 - Start of epoch 195
+2025-03-17 21:14:16,426 - Saved checkpoint path for step 19501 in epoch 195: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-107
+2025-03-17 21:14:16,428 - epoch 195, Train Loss: 0.21233250200748444, Validation Loss: 0.10317597538232803, Time taken: 13.91317343711853, The best epoch 195 has the minimum validation loss 0.10317597538232803
+2025-03-17 21:14:18,274 - Start of epoch 196
+2025-03-17 21:14:32,466 - epoch 196, Train Loss: 0.21209977567195892, Validation Loss: 0.10323958098888397, Time taken: 14.190638303756714, The best epoch 195 has the minimum validation loss 0.10317597538232803
+2025-03-17 21:14:34,194 - Start of epoch 197
+2025-03-17 21:14:48,625 - Saved checkpoint path for step 19701 in epoch 197: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-108
+2025-03-17 21:14:48,628 - epoch 197, Train Loss: 0.21205268800258636, Validation Loss: 0.10315461456775665, Time taken: 14.4322829246521, The best epoch 197 has the minimum validation loss 0.10315461456775665
+2025-03-17 21:14:50,395 - Start of epoch 198
+2025-03-17 21:15:04,038 - Saved checkpoint path for step 19801 in epoch 198: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-109
+2025-03-17 21:15:04,040 - epoch 198, Train Loss: 0.21205052733421326, Validation Loss: 0.10314860194921494, Time taken: 13.64395022392273, The best epoch 198 has the minimum validation loss 0.10314860194921494
+2025-03-17 21:15:05,972 - Start of epoch 199
+2025-03-17 21:15:19,358 - Saved checkpoint path for step 19901 in epoch 199: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-110
+2025-03-17 21:15:19,360 - epoch 199, Train Loss: 0.21202796697616577, Validation Loss: 0.10314513742923737, Time taken: 13.38698410987854, The best epoch 199 has the minimum validation loss 0.10314513742923737
+2025-03-17 21:15:20,874 - Start of epoch 200
+2025-03-17 21:15:34,163 - Saved checkpoint path for step 20001 in epoch 200: /no_backups/d1513/checkpoints/ckpt_DP-Transformer/Train_2025_03_17_20_17_32/ckpt-111
+2025-03-17 21:15:34,165 - epoch 200, Train Loss: 0.2120242565870285, Validation Loss: 0.10309956967830658, Time taken: 13.290309190750122, The best epoch 200 has the minimum validation loss 0.10309956967830658
+2025-03-17 21:15:35,708 - ------------------------End of the training process------------------------
+2025-03-17 21:15:35,712 - GIN Configurable Parameters:
+# Macros:
+# ==============================================================================
+batch_size = 8
+ckpt_max_to_keep = 5
+frame_length = 4
+num_chirps = 64
+num_samples = 512
+processing_method = \
+    'padding&shuffle&ap/ph&with_log10&abs_normalization(0,1)&no_angle_normalization'
+sampling_rate = 2
+whether_fftshift = True
+
+# Parameters for DPTransformerSTFT:
+# ==============================================================================
+DPTransformerSTFT.d_model = 64
+DPTransformerSTFT.dec_filters = 64
+DPTransformerSTFT.dec_kernel_size = 3
+DPTransformerSTFT.dff = 64
+DPTransformerSTFT.enc_filters = 64
+DPTransformerSTFT.enc_kernel_size = 3
+DPTransformerSTFT.input_size_info = \
+    [%batch_size, %sampling_rate, %frame_length, %num_samples, %num_chirps]
+DPTransformerSTFT.maximum_position_encoding = 10000
+DPTransformerSTFT.num_dp_layers = 1
+DPTransformerSTFT.num_heads = 2
+DPTransformerSTFT.num_layers = 1
+DPTransformerSTFT.processing_method = %processing_method
+DPTransformerSTFT.re_im_split = 0
+DPTransformerSTFT.sep_filters = 64
+DPTransformerSTFT.strides = 1
+DPTransformerSTFT.upsampling_ratio = %sampling_rate
+
+# Parameters for lsd:
+# ==============================================================================
+lsd.processing_method = %processing_method
+lsd.scaling_factor = 1
+lsd.thres_type = 'batch_median'
+
+# Parameters for main:
+# ==============================================================================
+main.benchmark_model_name = 'Interpolation'
+main.checkpoint_path = '/no_backups/d1513/checkpoints/'
+main.create_tfrecords = False
+main.model_name = 'DP-Transformer'
+main.tfrecord_suffix = '_factor2'
+main.type = 'Train'
+
+# Parameters for plot_range_doppler:
+# ==============================================================================
+plot_range_doppler.R = 50
+plot_range_doppler.cfar = None
+plot_range_doppler.fs = 24
+plot_range_doppler.vmax = 60
+plot_range_doppler.vmin = -80
+
+# Parameters for prepare:
+# ==============================================================================
+prepare.batch_size = %batch_size
+prepare.buffer_size = 50
+prepare.caching = False
+prepare.shuffle_seed = 42
+
+# Parameters for rD_processing:
+# ==============================================================================
+rD_processing.whether_fftshift = %whether_fftshift
+
+# Parameters for resolution_calculation:
+# ==============================================================================
+resolution_calculation.chirp_repetition_time_s = 0.00022
+resolution_calculation.end_frequency_GHz = 63
+resolution_calculation.num_chirps = %num_chirps
+resolution_calculation.start_frequency_GHz = 59
+
+# Parameters for sd_dataset:
+# ==============================================================================
+sd_dataset.base_dir = '/data/public/rd_sr/dataset_2/'
+sd_dataset.disable_tqdm = True
+sd_dataset.frame_length = %frame_length
+sd_dataset.high_res_processing_type = 'voltage'
+sd_dataset.is_high_pass_filter = False
+sd_dataset.low_res_processing_type = 'voltage'
+sd_dataset.random_state = 42
+sd_dataset.sampling_rate = %sampling_rate
+sd_dataset.shift_window = %frame_length
+sd_dataset.static_remove_duplicates = True
+sd_dataset.test_types = ['corridor&medium_tempo']
+sd_dataset.tfrecord_folder = '/no_backups/d1513/tfrecord/'
+sd_dataset.tqdm_status = False
+sd_dataset.train_test_ratio = 0.8
+sd_dataset.train_types = ['corridor&slow_tempo', 'corridor&medium_tempo']
+
+# Parameters for Trainer:
+# ==============================================================================
+Trainer.ckpt_max_to_keep = %ckpt_max_to_keep
+Trainer.early_stop_patience = 10
+Trainer.early_stop_type = True
+Trainer.epochs = 200
+Trainer.lambda_disc = 0.0
+Trainer.lambda_lsd = 1.0
+Trainer.lambda_vgg = 0.01
+Trainer.layer_names = \
+    ['block1_conv2', 'block2_conv2', 'block3_conv4', 'block4_conv4']
+Trainer.learning_rate = 0.001
+Trainer.loss_type = 'lsd&frequency_domain'
+Trainer.lr_schedule_type = True
+Trainer.optimizer_type = 'Adam'
+Trainer.overfitting_type = False
+Trainer.pretraining = False
+Trainer.processing_method = %processing_method
+
